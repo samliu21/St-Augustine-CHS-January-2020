@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C1Q-We-Oq9">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -288,7 +288,7 @@
                                         <viewLayoutGuide key="frameLayoutGuide" id="Ykf-Lc-syF"/>
                                     </scrollView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="Io6-Yf-S5L" firstAttribute="leading" secondItem="ZmE-2m-EIZ" secondAttribute="leading" id="1Bw-hi-I9d"/>
                                     <constraint firstItem="l1t-R2-2No" firstAttribute="leading" secondItem="ZmE-2m-EIZ" secondAttribute="leading" id="53C-6q-MII"/>
@@ -327,7 +327,6 @@
                                                             <constraint firstAttribute="height" constant="30" id="GMH-7T-zfJ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="19"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCo-Ct-GwT">
@@ -336,7 +335,6 @@
                                                             <constraint firstAttribute="height" constant="25" id="WDq-mE-rfS"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All buses have been cancelled today!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Py-Ha-p8F">
@@ -345,7 +343,6 @@
                                                             <constraint firstAttribute="height" id="rlI-Fu-JqG"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="18"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -366,7 +363,7 @@
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Q2H-uS-rjb">
                                                 <rect key="frame" x="0.0" y="71" width="375" height="200"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="Fvi-8E-9yA"/>
                                                 </constraints>
@@ -386,26 +383,25 @@
                                                             <subviews>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" text="No Announcements today" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="61y-hS-KmG">
                                                                     <rect key="frame" x="4" y="4" width="353" height="30"/>
-                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="30" id="RsX-VQ-NbK"/>
                                                                     </constraints>
-                                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="textColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="filer data" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H1a-Sr-4aj">
                                                                     <rect key="frame" x="4" y="42" width="353" height="94"/>
-                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <color key="tintColor" red="0.84705882349999995" green="0.68627450980000004" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                     <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
                                                                 </textView>
                                                             </subviews>
                                                         </view>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstItem="61y-hS-KmG" firstAttribute="leading" secondItem="PhT-m5-M9l" secondAttribute="leading" constant="4" id="7Qh-KV-qHD"/>
                                                             <constraint firstItem="H1a-Sr-4aj" firstAttribute="top" secondItem="61y-hS-KmG" secondAttribute="bottom" constant="8" id="B4u-bM-qH2"/>
@@ -439,7 +435,7 @@
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jsh-2k-3AL">
                                                 <rect key="frame" x="0.0" y="327" width="375" height="350"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="350" id="UcO-a8-1M7"/>
                                                 </constraints>
@@ -473,6 +469,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="80" id="R6I-bI-gAe"/>
                                                                     </constraints>
+                                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
@@ -481,7 +478,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="107" id="7N5-BS-7bM"/>
                                                                     </constraints>
-                                                                    <color key="textColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
@@ -492,7 +489,6 @@
                                                                         <constraint firstAttribute="height" constant="33" id="YuP-sY-aGH"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to club page to see attached image." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vY-lb-Br2">
@@ -506,6 +502,7 @@
                                                                 </label>
                                                             </subviews>
                                                         </view>
+                                                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="dli-wg-Xeb" secondAttribute="trailing" constant="4" id="475-Wf-hrp"/>
                                                             <constraint firstAttribute="trailing" secondItem="Mjs-Tn-f3F" secondAttribute="trailing" id="8ey-1p-6s5"/>
@@ -544,7 +541,7 @@
                                                 </connections>
                                             </collectionView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bF-9O-Uz2">
-                                                <rect key="frame" x="8" y="945" width="359" height="35"/>
+                                                <rect key="frame" x="8" y="924" width="359" height="35"/>
                                                 <color key="backgroundColor" red="0.81859855845494922" green="0.81464397604695438" blue="0.82255314086294418" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="UBW-WP-bQW"/>
@@ -557,7 +554,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Verse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uli-qm-Kuk">
-                                                <rect key="frame" x="132.5" y="719" width="110" height="28"/>
+                                                <rect key="frame" x="132.5" y="698" width="110" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="NlY-gf-gUW"/>
                                                 </constraints>
@@ -566,18 +563,18 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Verse" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-FH-PzW" userLabel="Verse">
-                                                <rect key="frame" x="8" y="755" width="359" height="132"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <rect key="frame" x="8" y="734" width="359" height="132"/>
+                                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="132" id="n8g-1B-kPF"/>
                                                 </constraints>
-                                                <color key="textColor" red="0.5" green="0.0767248403" blue="0.1712033674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Citation" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaM-wJ-iS7" userLabel="Citation">
-                                                <rect key="frame" x="8" y="888" width="359" height="42"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <rect key="frame" x="8" y="867" width="359" height="42"/>
+                                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="llq-FZ-9gz"/>
                                                 </constraints>
@@ -586,7 +583,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="jsh-2k-3AL" firstAttribute="leading" secondItem="tIc-FW-6Oz" secondAttribute="leading" id="944-cC-uN3"/>
@@ -605,7 +602,7 @@
                                             <constraint firstItem="9bF-9O-Uz2" firstAttribute="leading" secondItem="tIc-FW-6Oz" secondAttribute="leading" constant="8" id="hk3-sl-oFT"/>
                                             <constraint firstAttribute="trailing" secondItem="SHn-Ri-sPA" secondAttribute="trailing" id="iXt-ys-s8F"/>
                                             <constraint firstItem="Q2H-uS-rjb" firstAttribute="top" secondItem="SHn-Ri-sPA" secondAttribute="bottom" constant="8" id="jwG-9B-zRu"/>
-                                            <constraint firstItem="uli-qm-Kuk" firstAttribute="top" secondItem="jsh-2k-3AL" secondAttribute="bottom" constant="42" id="kk5-q0-G3E"/>
+                                            <constraint firstItem="uli-qm-Kuk" firstAttribute="top" secondItem="jsh-2k-3AL" secondAttribute="bottom" constant="21" id="kk5-q0-G3E"/>
                                             <constraint firstItem="SHn-Ri-sPA" firstAttribute="leading" secondItem="tIc-FW-6Oz" secondAttribute="leading" id="lGo-fu-DKf"/>
                                             <constraint firstItem="Q2H-uS-rjb" firstAttribute="leading" secondItem="tIc-FW-6Oz" secondAttribute="leading" id="pGd-9x-Ngw"/>
                                             <constraint firstAttribute="height" constant="1200" id="pH1-jS-mwu"/>
@@ -638,7 +635,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="f20-Wx-GAe" secondAttribute="trailing" id="17I-dU-7Iy"/>
@@ -733,7 +730,7 @@
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t3e-gL-BPd">
                                                 <rect key="frame" x="0.0" y="46" width="375" height="250"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="VRN-x1-tSq"/>
                                                 </constraints>
@@ -754,7 +751,6 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bxg-od-4td">
                                                                     <rect key="frame" x="30" y="0.0" width="195" height="45"/>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="20"/>
-                                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zt3-VC-JjL">
@@ -768,7 +764,7 @@
                                                                 </label>
                                                             </subviews>
                                                         </view>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstItem="zt3-VC-JjL" firstAttribute="leading" secondItem="bxg-od-4td" secondAttribute="trailing" constant="10" id="2gF-PG-f3z"/>
                                                             <constraint firstAttribute="trailing" secondItem="zt3-VC-JjL" secondAttribute="trailing" constant="30" id="2ij-tg-whe"/>
@@ -791,11 +787,12 @@
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zeeday Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWi-Vc-ekO">
                                                 <rect key="frame" x="8" y="8" width="359" height="30"/>
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.68627450980000004" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="EKi-sq-boI"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="22"/>
-                                                <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efT-T0-lQD">
@@ -807,7 +804,7 @@
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GXz-0n-mgV">
                                                 <rect key="frame" x="0.0" y="316" width="375" height="250"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="eJD-jn-ZKd"/>
                                                 </constraints>
@@ -828,7 +825,6 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bSJ-TJ-oSq">
                                                                     <rect key="frame" x="30" y="0.0" width="195" height="45"/>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="20"/>
-                                                                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MSA-IF-adE">
@@ -842,7 +838,7 @@
                                                                 </label>
                                                             </subviews>
                                                         </view>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstItem="bSJ-TJ-oSq" firstAttribute="leading" secondItem="khh-7v-2nK" secondAttribute="leading" constant="30" id="6BI-NN-LH3"/>
                                                             <constraint firstAttribute="trailing" secondItem="MSA-IF-adE" secondAttribute="trailing" constant="30" id="83t-Du-6m9"/>
@@ -864,7 +860,7 @@
                                                 </connections>
                                             </collectionView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="fWi-Vc-ekO" secondAttribute="trailing" constant="8" id="6Rr-Dz-WI3"/>
                                             <constraint firstItem="fWi-Vc-ekO" firstAttribute="leading" secondItem="d55-09-6hc" secondAttribute="leading" constant="8" id="AfB-TA-xl7"/>
@@ -890,7 +886,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xtF-4r-LM2" firstAttribute="bottom" secondItem="0Na-BV-hoj" secondAttribute="bottom" id="2E8-Fw-9XU"/>
@@ -1127,13 +1123,13 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ji-MB-U0v">
                                 <rect key="frame" x="16" y="240" width="343" height="35"/>
-                                <color key="backgroundColor" red="0.84653204159201756" green="0.85491354695431476" blue="0.85491354695431476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.68627450980000004" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="JZx-Wf-UcK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                 <state key="normal" title="CHOOSE IMAGE">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="chooseImagePressed:" destination="Y1d-Zc-x37" eventType="touchUpInside" id="KnZ-sp-amy"/>
@@ -1145,7 +1141,6 @@
                                     <constraint firstAttribute="height" constant="30" id="yYK-4S-MI5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSt-aI-y4F">
@@ -1154,7 +1149,6 @@
                                     <constraint firstAttribute="height" constant="30" id="HHb-4P-kcF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Description (Required)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKa-eA-Cel">
@@ -1171,7 +1165,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="3Ah-3I-QN2" firstAttribute="top" secondItem="SqX-UO-NOk" secondAttribute="top" id="0J9-Ht-lW4"/>
                             <constraint firstItem="SqX-UO-NOk" firstAttribute="trailing" secondItem="MKa-eA-Cel" secondAttribute="trailing" constant="16" id="3iY-Tk-E15"/>
@@ -1448,7 +1442,7 @@
                                                 </connections>
                                             </collectionView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="KVY-k7-KZD" firstAttribute="top" secondItem="JR4-o0-tId" secondAttribute="bottom" constant="7" id="05u-OP-A1P"/>
                                             <constraint firstAttribute="trailing" secondItem="4W9-pk-Hne" secondAttribute="trailing" id="1RD-Xt-18k"/>
@@ -1478,6 +1472,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="xFE-bW-jYN" firstAttribute="leading" secondItem="tkG-gW-Q21" secondAttribute="leading" id="PoW-Si-5xS"/>
                                     <constraint firstItem="xFE-bW-jYN" firstAttribute="top" secondItem="tkG-gW-Q21" secondAttribute="top" id="dyd-nx-OAg"/>
@@ -1507,7 +1502,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="VEj-rX-mUM" firstAttribute="baseline" secondItem="AEQ-Wr-Tze" secondAttribute="baseline" id="52Y-gF-6mq"/>
                             <constraint firstItem="AEQ-Wr-Tze" firstAttribute="trailing" secondItem="1aL-Na-NjG" secondAttribute="trailingMargin" id="9dr-si-Hfv"/>
@@ -1609,7 +1604,6 @@
                                     <constraint firstAttribute="height" constant="30" id="lUM-JU-rFI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="20"/>
-                                <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N86-X9-Adj">
@@ -1702,7 +1696,6 @@
                                     <constraint firstAttribute="height" constant="35" id="mCJ-cH-T2o"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1i-qo-akf">
@@ -1711,7 +1704,6 @@
                                     <constraint firstAttribute="height" constant="35" id="1hH-Ze-oAM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6J-jg-kxs">
@@ -1726,7 +1718,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="B6J-jg-kxs" secondAttribute="trailing" id="0Bh-w6-p1t"/>
                             <constraint firstItem="b1i-qo-akf" firstAttribute="leading" secondItem="Ti9-xN-Ece" secondAttribute="leading" constant="16" id="2wf-uu-pLC"/>
@@ -1800,7 +1792,7 @@
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0CK-Lk-7fW">
                                                 <rect key="frame" x="0.0" y="96" width="375" height="250"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="hb7-fl-aA2"/>
                                                 </constraints>
@@ -1821,12 +1813,11 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSQ-5j-aDm">
                                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </view>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="bSQ-5j-aDm" secondAttribute="trailing" id="1XJ-5I-dGL"/>
                                                             <constraint firstItem="bSQ-5j-aDm" firstAttribute="leading" secondItem="RsM-VK-mzp" secondAttribute="leading" id="Xyz-Ub-hsy"/>
@@ -1875,12 +1866,11 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EA-R1-BaH">
                                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </view>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="7EA-R1-BaH" secondAttribute="trailing" id="4mY-sf-I2t"/>
                                                             <constraint firstAttribute="bottom" secondItem="7EA-R1-BaH" secondAttribute="bottom" id="Z7a-9F-kGC"/>
@@ -1899,7 +1889,9 @@
                                             </collectionView>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldi-7Y-UlF">
                                                 <rect key="frame" x="345" y="0.0" width="30" height="30"/>
-                                                <state key="normal" title="edit"/>
+                                                <state key="normal" title="edit">
+                                                    <color key="titleColor" red="0.84705882349999995" green="0.68627450980000004" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="6A5-3i-4CA" kind="presentation" identifier="edit" id="riZ-Xa-kuY"/>
                                                 </connections>
@@ -1914,7 +1906,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="og1-Uv-mLw" firstAttribute="top" secondItem="lq5-pl-I2h" secondAttribute="top" id="1Xr-ih-Omp"/>
                                             <constraint firstItem="ldi-7Y-UlF" firstAttribute="top" secondItem="lq5-pl-I2h" secondAttribute="top" id="2kH-vJ-WhT"/>
@@ -1937,6 +1929,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="lq5-pl-I2h" firstAttribute="leading" secondItem="BSh-LP-d3X" secondAttribute="leading" id="0j3-5i-ESg"/>
                                     <constraint firstItem="lq5-pl-I2h" firstAttribute="top" secondItem="BSh-LP-d3X" secondAttribute="top" id="6Wf-7l-Qb5"/>
@@ -1945,7 +1938,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="BSh-LP-d3X" firstAttribute="top" secondItem="fb5-aw-hca" secondAttribute="top" id="3GK-eQ-N3N"/>
                             <constraint firstItem="BSh-LP-d3X" firstAttribute="trailing" secondItem="fb5-aw-hca" secondAttribute="trailing" id="CQG-6I-7bh"/>
@@ -1993,7 +1986,7 @@
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1YQ-nU-6PM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Acy-Ty-Qe5">
                                     <size key="itemSize" width="375" height="178"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -2074,7 +2067,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Maj-0H-z1X" firstAttribute="top" secondItem="0Mt-51-KJI" secondAttribute="top" constant="84" id="C2w-aD-Xea"/>
                             <constraint firstItem="Maj-0H-z1X" firstAttribute="centerX" secondItem="1YQ-nU-6PM" secondAttribute="centerX" id="LLV-ko-c6f"/>
@@ -2115,7 +2108,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WZp-Fy-fTi">
                                 <rect key="frame" x="0.0" y="43" width="375" height="580"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="18" minimumInteritemSpacing="10" id="iLu-wo-dmf">
                                     <size key="itemSize" width="375" height="64"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -2136,7 +2129,6 @@
                                                         <constraint firstAttribute="height" constant="32" id="87y-Al-Kwr"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NI4-oW-bjw">
@@ -2152,11 +2144,11 @@
                                                         <constraint firstAttribute="height" constant="32" id="Y9g-V1-a3A"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="16"/>
-                                                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="cpW-QM-aBX" firstAttribute="leading" secondItem="NI4-oW-bjw" secondAttribute="trailing" constant="8" id="CPe-0q-yto"/>
                                             <constraint firstAttribute="bottom" secondItem="NI4-oW-bjw" secondAttribute="bottom" id="OfD-0t-AhR"/>
@@ -2190,7 +2182,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="WZp-Fy-fTi" firstAttribute="trailing" secondItem="gxI-g1-t0M" secondAttribute="trailing" id="19E-on-yYZ"/>
                             <constraint firstItem="gxI-g1-t0M" firstAttribute="trailing" secondItem="ScL-xV-hka" secondAttribute="trailing" constant="8" id="45r-1v-l64"/>
@@ -2232,12 +2225,12 @@
                                                     <constraint firstAttribute="height" constant="35" id="qmL-C0-EZP"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Bold" family="Scada" pointSize="17"/>
-                                                <color key="textColor" red="0.5" green="0.0767248403" blue="0.1712033674" alpha="0.94804152399999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.84705882349999995" green="0.68627450980000004" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qoC-bh-Zl7">
                                                 <rect key="frame" x="0.0" y="51" width="375" height="165"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="165" id="JJB-5n-WKF"/>
                                                 </constraints>
@@ -2261,7 +2254,6 @@
                                                                         <constraint firstAttribute="height" constant="32" id="7po-AI-ar4"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pXa-Ty-LkR">
@@ -2277,11 +2269,11 @@
                                                                         <constraint firstAttribute="height" constant="32" id="Kds-QJ-SMC"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="16"/>
-                                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </view>
+                                                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="swP-9f-AM8" firstAttribute="leading" secondItem="pXa-Ty-LkR" secondAttribute="trailing" constant="8" id="JVa-cy-T4C"/>
                                                             <constraint firstAttribute="trailing" secondItem="wwN-9w-7EB" secondAttribute="trailing" constant="8" id="Nc2-qJ-VeU"/>
@@ -2316,7 +2308,7 @@
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wxd-mQ-z1s">
                                                 <rect key="frame" x="0.0" y="283" width="375" height="165"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="165" id="GhJ-gS-Svf"/>
                                                 </constraints>
@@ -2340,7 +2332,6 @@
                                                                         <constraint firstAttribute="height" constant="32" id="X3X-XD-TVT"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dq4-eL-oeW">
@@ -2356,11 +2347,11 @@
                                                                         <constraint firstAttribute="height" constant="32" id="3px-OU-Z8u"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="16"/>
-                                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </view>
+                                                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="nhT-Ne-Jlj" firstAttribute="leading" secondItem="dq4-eL-oeW" secondAttribute="trailing" constant="8" id="6Ce-UK-lnH"/>
                                                             <constraint firstItem="nhT-Ne-Jlj" firstAttribute="leading" secondItem="dq4-eL-oeW" secondAttribute="trailing" constant="8" id="70a-4w-Mpa"/>
@@ -2386,7 +2377,7 @@
                                                 </connections>
                                             </collectionView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Wxd-mQ-z1s" secondAttribute="trailing" id="2m3-6S-lve"/>
                                             <constraint firstAttribute="trailing" secondItem="qoC-bh-Zl7" secondAttribute="trailing" id="CTz-NV-590"/>
@@ -2404,6 +2395,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="zCC-PP-D4Y" firstAttribute="leading" secondItem="njX-aa-WOx" secondAttribute="leading" id="360-ny-adr"/>
                                     <constraint firstItem="zCC-PP-D4Y" firstAttribute="top" secondItem="njX-aa-WOx" secondAttribute="top" id="PBc-o5-YFD"/>
@@ -2412,7 +2404,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="njX-aa-WOx" firstAttribute="top" secondItem="kW0-uq-q43" secondAttribute="top" id="4rU-u8-mic"/>
                             <constraint firstItem="njX-aa-WOx" firstAttribute="trailing" secondItem="kW0-uq-q43" secondAttribute="trailing" id="RF0-ww-RaE"/>
@@ -2520,9 +2512,9 @@
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rbC-J1-bE7">
                                                 <rect key="frame" x="8" y="314" width="359" height="185.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
-                                                <color key="textColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                                             </textView>
@@ -2533,7 +2525,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="nx7-ta-s3F" firstAttribute="top" secondItem="Ofi-vH-BTz" secondAttribute="top" constant="8" id="4tO-yT-PuZ"/>
                                             <constraint firstItem="nx7-ta-s3F" firstAttribute="leading" secondItem="Ofi-vH-BTz" secondAttribute="leading" constant="12" id="8OV-Wk-pBC"/>
@@ -2558,6 +2550,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Ofi-vH-BTz" secondAttribute="bottom" id="CsX-R1-Sqi"/>
                                     <constraint firstItem="Ofi-vH-BTz" firstAttribute="top" secondItem="WvZ-l1-I3R" secondAttribute="top" id="Ke8-I2-XxI"/>
@@ -2570,7 +2563,7 @@
                                 <color key="backgroundColor" red="0.27450980392156865" green="0.031372549019607843" blue="0.090196078431372548" alpha="0.94804152399999997" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="NXy-hH-ZlP" secondAttribute="trailing" id="7M7-Do-dre"/>
                             <constraint firstItem="WvZ-l1-I3R" firstAttribute="bottom" secondItem="gV1-T4-NGf" secondAttribute="bottom" id="D32-dB-UKh"/>
@@ -2712,10 +2705,11 @@
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="title" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xhe-5P-44d">
                                                 <rect key="frame" x="16" y="94" width="343" height="90"/>
-                                                <color key="backgroundColor" red="0.93126059516432325" green="0.93126059516432325" blue="0.93126059516432325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="90" id="b9J-6g-3Qf"/>
                                                 </constraints>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <connections>
@@ -2724,10 +2718,11 @@
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ki1-cs-iOk">
                                                 <rect key="frame" x="16" y="230" width="343" height="150"/>
-                                                <color key="backgroundColor" red="0.93126059520000004" green="0.93126059520000004" blue="0.93126059520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="HQA-nB-nZg"/>
                                                 </constraints>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <connections>
@@ -2747,7 +2742,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="lIc-Gg-pnF" firstAttribute="top" secondItem="Ki1-cs-iOk" secondAttribute="bottom" constant="8" id="1Nd-xu-GDJ"/>
                                             <constraint firstAttribute="trailing" secondItem="Ki1-cs-iOk" secondAttribute="trailing" constant="16" id="6GL-E1-efa"/>
@@ -2779,6 +2774,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="qwS-ou-6Jz" firstAttribute="leading" secondItem="D7J-Mz-pYF" secondAttribute="leading" id="3yX-sv-Lld"/>
                                     <constraint firstItem="qwS-ou-6Jz" firstAttribute="top" secondItem="D7J-Mz-pYF" secondAttribute="top" id="ixx-Wr-bCM"/>
@@ -2787,7 +2783,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="D7J-Mz-pYF" firstAttribute="bottom" secondItem="GDe-Vm-nvN" secondAttribute="bottom" id="2GI-Bi-1vh"/>
                             <constraint firstItem="UkG-8B-fFj" firstAttribute="leading" secondItem="vya-L2-R71" secondAttribute="leading" id="4pl-EV-fjV"/>
@@ -2849,7 +2845,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="fL7-wk-2ga" firstAttribute="centerX" secondItem="RYb-DO-qDC" secondAttribute="centerX" id="7a9-Kd-0Yq"/>
                             <constraint firstItem="fL7-wk-2ga" firstAttribute="top" secondItem="a9M-Io-xzb" secondAttribute="top" constant="175" id="MKL-Xc-rnh"/>
@@ -2912,7 +2908,7 @@
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GJq-8o-7dQ">
                                 <rect key="frame" x="0.0" y="351" width="375" height="100"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="ZGz-IW-M6x"/>
                                 </constraints>
@@ -2935,7 +2931,7 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="AVa-AU-i5Y" firstAttribute="top" secondItem="wzV-3a-Zbs" secondAttribute="top" id="78q-9M-5W6"/>
                                             <constraint firstAttribute="trailing" secondItem="AVa-AU-i5Y" secondAttribute="trailing" id="IDb-6K-HsB"/>
@@ -2958,12 +2954,11 @@
                                     <constraint firstAttribute="height" constant="105" id="d8C-KN-IKh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coA-CE-OVr">
                                 <rect key="frame" x="16" y="582" width="343" height="45"/>
-                                <color key="backgroundColor" red="0.89019607840000003" green="0.7843137255" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.68627450980392157" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="ozz-lH-id4"/>
                                 </constraints>
@@ -2978,7 +2973,7 @@
                                 <color key="backgroundColor" red="0.27450980392156865" green="0.031372549019607843" blue="0.090196078431372548" alpha="0.94804152399999997" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="nH0-8k-BP5" firstAttribute="trailing" secondItem="cWS-Rm-mUV" secondAttribute="trailing" id="0bl-g1-ZQo"/>
                             <constraint firstItem="GJq-8o-7dQ" firstAttribute="top" secondItem="Rbc-1S-gn2" secondAttribute="bottom" constant="8" id="1fP-Rs-4Xv"/>
@@ -3054,7 +3049,6 @@
                                                     <constraint firstAttribute="height" constant="35" id="Mil-ai-OcU"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semester 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igd-VU-V8K">
@@ -3063,7 +3057,6 @@
                                                     <constraint firstAttribute="height" constant="35" id="3GS-dJ-opK"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Period 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U8e-Z8-qpR">
@@ -3096,7 +3089,6 @@
                                                     <constraint firstAttribute="height" constant="65" id="u6a-fn-ZNr"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="16"/>
-                                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semester 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kq7-fM-WDV">
@@ -3105,7 +3097,6 @@
                                                     <constraint firstAttribute="height" constant="35" id="src-Z1-xAb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Period 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YkT-6Y-Khj">
@@ -3134,25 +3125,29 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c19-ND-MrT">
                                                 <rect key="frame" x="16" y="608" width="343" height="45"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.7843137255" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.84705882352941175" green="0.68627450980392157" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="j4p-O2-yvB"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                <state key="normal" title="Next"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="pressedNextButton:" destination="qsn-wz-qiu" eventType="touchUpInside" id="hSJ-f7-4fY"/>
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wq8-aj-dnZ">
                                                 <rect key="frame" x="343" y="58" width="32" height="30"/>
-                                                <state key="normal" title="Next"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="OlW-1E-B2r" kind="show" identifier="PrivSeg" id="Mtg-K2-D3S"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="c19-ND-MrT" firstAttribute="leading" secondItem="r0r-9u-BYJ" secondAttribute="leading" constant="16" id="0HM-JX-MLH"/>
                                             <constraint firstItem="Kq7-fM-WDV" firstAttribute="top" secondItem="FQf-CO-ftf" secondAttribute="bottom" constant="8" id="12Q-Pd-d3g"/>
@@ -3202,6 +3197,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="r0r-9u-BYJ" secondAttribute="bottom" id="16Q-hL-QGa"/>
                                     <constraint firstItem="r0r-9u-BYJ" firstAttribute="leading" secondItem="msu-bp-ay4" secondAttribute="leading" id="MK6-1S-5M5"/>
@@ -3214,7 +3210,7 @@
                                 <color key="backgroundColor" red="0.27450980392156865" green="0.031372549019607843" blue="0.090196078431372548" alpha="0.94804152399999997" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="msu-bp-ay4" firstAttribute="bottom" secondItem="nsj-2s-4Lz" secondAttribute="bottom" id="0xf-pm-KXG"/>
                             <constraint firstItem="msu-bp-ay4" firstAttribute="trailing" secondItem="nsj-2s-4Lz" secondAttribute="trailing" id="1ID-ua-GmY"/>
@@ -3283,12 +3279,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeD-zk-IfB">
                                 <rect key="frame" x="16" y="582" width="343" height="45"/>
-                                <color key="backgroundColor" red="0.89019607840000003" green="0.7843137255" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.68627450980392157" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="yrc-GB-baj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <state key="normal" title="LET'S GO!"/>
+                                <state key="normal" title="LET'S GO!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="HyD-QJ-rCQ" eventType="touchUpInside" id="X2H-Rq-D2v"/>
                                     <action selector="pressedFinishedButton:" destination="OlW-1E-B2r" eventType="touchUpInside" id="8ez-Ed-Qh3"/>
@@ -3300,7 +3298,6 @@
                                     <constraint firstAttribute="height" constant="40" id="9W3-Oi-KhQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep classes private" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFP-vs-1bO">
@@ -3310,7 +3307,6 @@
                                     <constraint firstAttribute="height" constant="38" id="wET-WN-X6n"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YWg-NF-kyI">
@@ -3326,7 +3322,6 @@
                                     <constraint firstAttribute="height" constant="38" id="qYn-wq-Egt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLc-ee-AQJ">
@@ -3360,7 +3355,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Xar-cB-8b2" firstAttribute="trailing" secondItem="Bgm-6B-NJ6" secondAttribute="trailing" constant="16" id="0Vt-Tg-5qZ"/>
                             <constraint firstItem="DFP-vs-1bO" firstAttribute="leading" secondItem="Bgm-6B-NJ6" secondAttribute="leading" id="0pq-bP-cZ0"/>
@@ -3419,7 +3414,7 @@
                                     <constraint firstAttribute="height" constant="40" id="dWT-9z-sMs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.55294117647058827" green="0.070588235294117646" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjs-05-0zX">
@@ -3443,7 +3438,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Log Out">
-                                    <color key="titleColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="tappedSignOut:" destination="Tpv-kb-6nU" eventType="touchUpInside" id="v8w-WX-4BP"/>
@@ -3451,7 +3446,7 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEe-Yh-U7Y" customClass="GIDSignInButton">
                                 <rect key="frame" x="112" y="436.5" width="151" height="80"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="hTO-db-WMY"/>
                                 </constraints>
@@ -3484,7 +3479,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="7yA-C2-tBL" firstAttribute="top" secondItem="XRy-Bd-M4U" secondAttribute="bottom" constant="50" id="1GE-Vp-RFp"/>
                             <constraint firstItem="jvB-6y-Tq2" firstAttribute="bottom" secondItem="xeV-u8-Ob6" secondAttribute="bottom" constant="20" id="4oG-GH-vYD"/>
@@ -3560,7 +3555,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                 <state key="normal" title="Log Out">
-                                    <color key="titleColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="pressedLogOut:" destination="c74-yS-abQ" eventType="touchUpInside" id="EDC-O1-dc0"/>
@@ -3574,7 +3569,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                 <state key="normal" title="Clear Keys">
-                                    <color key="titleColor" red="0.5" green="0.0767248403" blue="0.1712033674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="clearKeys:" destination="c74-yS-abQ" eventType="touchUpInside" id="waT-BX-eEi"/>
@@ -3587,7 +3582,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                 <state key="normal" title="Clear Cache">
-                                    <color key="titleColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="removeCache:" destination="c74-yS-abQ" eventType="touchUpInside" id="df3-cw-7RB"/>
@@ -3599,7 +3594,6 @@
                                     <constraint firstAttribute="height" constant="38" id="pTv-AP-FPR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum of around 200 MB." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejb-Q1-QI6">
@@ -3608,7 +3602,6 @@
                                     <constraint firstAttribute="height" constant="30" id="e1Y-kY-rKW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable General Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ar-ow-Ggw">
@@ -3634,7 +3627,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                 <state key="normal" title="Subscribe to Topic">
-                                    <color key="titleColor" red="0.5" green="0.0767248403" blue="0.1712033674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="pressedSubscribeTopic:" destination="c74-yS-abQ" eventType="touchUpInside" id="Kle-b4-pT1"/>
@@ -3647,7 +3640,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                 <state key="normal" title="Send Feedback">
-                                    <color key="titleColor" red="0.5" green="0.0767248403" blue="0.1712033674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="sendFeedbackPressed:" destination="c74-yS-abQ" eventType="touchUpInside" id="m3K-O2-dSi"/>
@@ -3660,7 +3653,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                 <state key="normal" title="Check Remote Config">
-                                    <color key="titleColor" red="0.5" green="0.0767248403" blue="0.1712033674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="HWe-5Q-9LF" kind="show" id="Kvg-gq-JTb"/>
@@ -3673,7 +3666,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                 <state key="normal" title="Sign Up Flow">
-                                    <color key="titleColor" red="0.5" green="0.0767248403" blue="0.1712033674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="HyD-QJ-rCQ" kind="presentation" id="d7u-dt-h7O"/>
@@ -3712,7 +3705,7 @@
                                 </connections>
                             </switch>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="a89-mN-5ju" firstAttribute="top" secondItem="8LQ-F4-lPc" secondAttribute="bottom" constant="8" id="2jb-8S-Nm0"/>
                             <constraint firstItem="cMS-II-GjS" firstAttribute="top" secondItem="A6j-iU-e8i" secondAttribute="bottom" constant="8" id="3nz-As-I5c"/>
@@ -3820,7 +3813,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5cq-7X-y0B">
                                 <rect key="frame" x="0.0" y="35" width="375" height="588"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="20" id="heF-mA-63X">
                                     <size key="itemSize" width="375" height="130"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -3847,7 +3840,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4DY-HW-FoH">
                                                             <rect key="frame" x="0.0" y="40" width="55" height="32"/>
                                                             <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="13"/>
-                                                            <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyl-3N-KM8">
@@ -3857,7 +3850,7 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="5ws-CP-IMG" firstAttribute="leading" secondItem="MB8-sn-jCm" secondAttribute="leading" id="99I-2H-5ww"/>
                                                         <constraint firstItem="4DY-HW-FoH" firstAttribute="top" secondItem="5ws-CP-IMG" secondAttribute="bottom" id="FUs-ft-wHh"/>
@@ -3879,19 +3872,16 @@
                                                         <constraint firstAttribute="height" id="NkX-wf-Mfb"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Arist Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyM-z1-Du7">
                                                     <rect key="frame" x="83" y="53.5" width="272" height="21.5"/>
                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oEV-SK-Erq">
                                                     <rect key="frame" x="83" y="20" width="272" height="26.5"/>
                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="21"/>
-                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a99-iw-dyH">
@@ -3900,7 +3890,6 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Student Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-gM-OlW" customClass="SRCopyableLabel" customModule="St_Augustine_CHS" customModuleProvider="target">
                                                             <rect key="frame" x="83" y="3" width="274" height="34"/>
                                                             <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                            <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lY9-9T-YnJ">
@@ -3910,7 +3899,7 @@
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="lY9-9T-YnJ" secondAttribute="bottom" constant="3" id="3bw-OH-xki"/>
                                                         <constraint firstItem="Z98-gM-OlW" firstAttribute="leading" secondItem="lY9-9T-YnJ" secondAttribute="trailing" constant="19" id="4gv-gP-rvP"/>
@@ -3924,7 +3913,7 @@
                                                 </view>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="a99-iw-dyH" firstAttribute="leading" secondItem="PjA-fh-xTd" secondAttribute="leading" id="1kL-fD-GQI"/>
                                             <constraint firstAttribute="trailing" secondItem="Vsn-0E-E95" secondAttribute="trailing" id="31v-nM-tBI"/>
@@ -4047,7 +4036,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="zff-YE-uVW" secondAttribute="trailing" constant="8" id="2zb-C7-o2H"/>
                                             <constraint firstAttribute="trailing" secondItem="FAy-L9-6X1" secondAttribute="trailing" constant="8" id="5ee-3N-87u"/>
@@ -4097,7 +4086,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="nkA-Xt-AkT" firstAttribute="top" secondItem="Bvf-ub-6X2" secondAttribute="bottom" constant="8" symbolic="YES" id="6dJ-1T-sSs"/>
                             <constraint firstItem="lCf-JI-l5y" firstAttribute="centerY" secondItem="5cq-7X-y0B" secondAttribute="centerY" id="ANh-Od-iuI"/>
@@ -4154,7 +4143,6 @@
                                     <constraint firstAttribute="height" constant="40" id="BQW-Vx-gJc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade 10 -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sr3-aX-KAY">
@@ -4163,7 +4151,6 @@
                                     <constraint firstAttribute="height" constant="40" id="tvR-wc-djo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade 12 -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzt-8C-9Dg">
@@ -4172,7 +4159,6 @@
                                     <constraint firstAttribute="height" constant="40" id="TRK-0R-exz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yB4-MS-SF0">
@@ -4186,7 +4172,6 @@
                                     <constraint firstAttribute="height" constant="40" id="b6w-GS-yUm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DpM-CH-uwe">
@@ -4205,7 +4190,7 @@
                                 <color key="tintColor" red="0.84705882349999995" green="0.68627450980000004" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Bzt-8C-9Dg" firstAttribute="leading" secondItem="NiJ-hF-BPh" secondAttribute="leading" constant="16" id="Bq3-h3-RXq"/>
                             <constraint firstItem="NiJ-hF-BPh" firstAttribute="trailing" secondItem="Wom-jb-LVN" secondAttribute="trailing" constant="16" id="Fa0-bo-TS5"/>
@@ -4261,7 +4246,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is your personal Titan Tag. You can get it scanned by club admins at events to get badges" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pC-zz-896">
                                 <rect key="frame" x="16" y="397" width="343" height="71"/>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="19"/>
-                                <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlX-wA-KMV">
@@ -4292,11 +4276,10 @@
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHo-wd-l83">
                                 <rect key="frame" x="16" y="579" width="343" height="24"/>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="19"/>
-                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="5JL-88-cyF" firstAttribute="trailing" secondItem="BlX-wA-KMV" secondAttribute="trailing" constant="20" id="687-rL-C2L"/>
                             <constraint firstItem="uHo-wd-l83" firstAttribute="leading" secondItem="5JL-88-cyF" secondAttribute="leading" constant="16" id="9Dg-uL-ecE"/>
@@ -4366,7 +4349,7 @@
                                     <constraint firstAttribute="height" constant="35" id="LOB-KQ-qLD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                <color key="textColor" red="0.5" green="0.0767248403" blue="0.1712033674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKa-mC-Cd6">
@@ -4401,7 +4384,7 @@
                                 <color key="backgroundColor" red="0.27450980392156865" green="0.031372549019607843" blue="0.090196078431372548" alpha="0.94804152399999997" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="UMc-xz-yU5" firstAttribute="leading" secondItem="qjb-Ac-qpN" secondAttribute="leading" constant="16" id="28U-5P-e5x"/>
                             <constraint firstItem="wiS-nO-rUG" firstAttribute="leading" secondItem="qjb-Ac-qpN" secondAttribute="leading" constant="16" id="3co-Zd-9az"/>
@@ -4459,7 +4442,6 @@
                                                     <constraint firstAttribute="height" constant="35" id="Ew9-co-oQQ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semester 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j2-Dg-Sls">
@@ -4468,7 +4450,6 @@
                                                     <constraint firstAttribute="height" constant="35" id="U0P-tV-9ea"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Period 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ClX-MC-nI9">
@@ -4501,7 +4482,6 @@
                                                     <constraint firstAttribute="height" constant="38" id="mnd-jS-1es"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="15"/>
-                                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semester 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hld-j5-gaC">
@@ -4510,7 +4490,6 @@
                                                     <constraint firstAttribute="height" constant="35" id="Oy6-o0-6IE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Period 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yd8-7o-IGn">
@@ -4538,7 +4517,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="ClX-MC-nI9" firstAttribute="leading" secondItem="2j2-Dg-Sls" secondAttribute="leading" id="00U-QD-4Iw"/>
                                             <constraint firstAttribute="height" constant="900" id="2Je-UA-pak"/>
@@ -4621,7 +4600,7 @@
                                 <color key="backgroundColor" red="0.27450980392156865" green="0.031372549019607843" blue="0.090196078431372548" alpha="0.94804152399999997" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="bDc-eC-aAU" firstAttribute="trailing" secondItem="XaR-e6-BUj" secondAttribute="trailing" id="4HT-eg-acX"/>
                             <constraint firstItem="cI2-e1-TgP" firstAttribute="bottom" secondItem="XaR-e6-BUj" secondAttribute="bottom" constant="55" id="Ai5-xq-oD6"/>
@@ -4664,26 +4643,19 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="62q-Lj-VTv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="H8p-1X-hyq">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
-                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" id="JYZ-ZA-zr4">
-                            <rect key="frame" x="0.0" y="140" width="375" height="50"/>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Got any questions to add?  Visit our site at https://app.staugustinechs.ca/!" textAlignment="center" id="JYZ-ZA-zr4">
+                            <rect key="frame" x="0.0" y="140" width="375" height="47"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <attributedString key="attributedText">
-                                <fragment content="Got any questions to add?  Visit our site at https://app.staugustinechs.ca/!">
-                                    <attributes>
-                                        <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <font key="NSFont" size="17" name="Scada-Regular"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                    </attributes>
-                                </fragment>
-                            </attributedString>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             <dataDetectorType key="dataDetectorTypes" link="YES"/>
                         </textView>
@@ -4698,12 +4670,14 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aLu-dd-di0">
                                             <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="question" destination="aLu-dd-di0" id="xpZ-Iw-T7m"/>
                                 </connections>
@@ -4739,7 +4713,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
-                                                <color key="textColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -4765,12 +4739,12 @@
                                                     <constraint firstAttribute="height" constant="35" id="S4t-qC-Dcy"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                <color key="textColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0s-0E-a4J">
                                                 <rect key="frame" x="89" y="431.5" width="197" height="34"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.68627450980000004" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                 <state key="normal" title="Join Club"/>
                                                 <connections>
@@ -4824,18 +4798,18 @@
                                                     <constraint firstAttribute="height" constant="30" id="af8-aT-x79"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                <color key="textColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.55294117649999996" green="0.070588235289999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geg-bm-vH6">
-                                                <rect key="frame" x="8" y="627.5" width="359" height="35"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="89" y="627.5" width="197" height="35"/>
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.68627450980000004" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="RkF-nT-jBH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                 <state key="normal" title="Create New Badge">
-                                                    <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="createBadgeButtonTapped:" destination="Eca-DT-iQP" eventType="touchUpInside" id="hEF-R2-eE0"/>
@@ -4843,7 +4817,7 @@
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Eq4-6n-U28">
                                                 <rect key="frame" x="0.0" y="713.5" width="375" height="576"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="576" id="3dz-c9-p76"/>
                                                 </constraints>
@@ -4873,22 +4847,23 @@
                                                                 </label>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p1e-vX-e5z">
                                                                     <rect key="frame" x="0.0" y="43" width="375" height="100"/>
-                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="100" id="rJR-ui-Cj3"/>
                                                                     </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                                    <color key="textColor" red="0.5" green="0.0767248403" blue="0.1712033674" alpha="0.94804152399999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZD6-i3-nJO">
                                                                     <rect key="frame" x="0.0" y="151" width="375" height="100"/>
-                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="100" id="fZk-ax-2HH"/>
                                                                     </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
@@ -4904,7 +4879,6 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Student Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GuT-iC-nJZ">
                                                                             <rect key="frame" x="83" y="3" width="274" height="34"/>
                                                                             <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
-                                                                            <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oIg-he-aCf">
@@ -4914,7 +4888,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstItem="oIg-he-aCf" firstAttribute="top" secondItem="6Fb-2F-Y5r" secondAttribute="top" constant="3" id="CLN-nr-3dA"/>
                                                                         <constraint firstAttribute="height" constant="40" id="GT5-uZ-mLP"/>
@@ -4928,6 +4902,7 @@
                                                                 </view>
                                                             </subviews>
                                                         </view>
+                                                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="lQw-yj-feZ" firstAttribute="top" secondItem="kt9-he-a1a" secondAttribute="top" id="2e9-rp-OpU"/>
                                                             <constraint firstAttribute="trailing" secondItem="p1e-vX-e5z" secondAttribute="trailing" id="8xT-Mj-dkn"/>
@@ -4964,17 +4939,18 @@
                                                 </connections>
                                             </collectionView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="PD8-fo-a7q" firstAttribute="top" secondItem="10q-7h-ex9" secondAttribute="bottom" constant="8" id="1n9-EJ-eIL"/>
+                                            <constraint firstItem="geg-bm-vH6" firstAttribute="leading" secondItem="fzz-ug-RQv" secondAttribute="leading" constant="89" id="3nZ-XJ-3XW"/>
                                             <constraint firstAttribute="height" constant="1308" id="4UG-s5-b99"/>
-                                            <constraint firstAttribute="trailing" secondItem="geg-bm-vH6" secondAttribute="trailing" constant="8" id="5Vo-nu-nde"/>
                                             <constraint firstItem="Eq4-6n-U28" firstAttribute="top" secondItem="yRp-LF-EjK" secondAttribute="bottom" constant="8" id="EK1-9p-OiU"/>
                                             <constraint firstItem="Eq4-6n-U28" firstAttribute="leading" secondItem="fzz-ug-RQv" secondAttribute="leading" id="Fmn-k9-4R1"/>
                                             <constraint firstAttribute="trailing" secondItem="FAQ-Ju-EDl" secondAttribute="trailing" id="Ht9-Bg-0NC"/>
                                             <constraint firstAttribute="trailing" secondItem="10q-7h-ex9" secondAttribute="trailing" id="Ih3-De-Od5"/>
                                             <constraint firstItem="FAQ-Ju-EDl" firstAttribute="top" secondItem="yNJ-VN-9E9" secondAttribute="bottom" constant="8" id="LcB-mF-Z4V"/>
                                             <constraint firstItem="K0s-0E-a4J" firstAttribute="top" secondItem="PD8-fo-a7q" secondAttribute="bottom" constant="8" id="NLw-PX-Ha8"/>
+                                            <constraint firstAttribute="trailing" secondItem="geg-bm-vH6" secondAttribute="trailing" constant="89" id="Ox1-DJ-2ZC"/>
                                             <constraint firstItem="K0s-0E-a4J" firstAttribute="leading" secondItem="fzz-ug-RQv" secondAttribute="leading" constant="89" id="Oya-UE-3CT"/>
                                             <constraint firstAttribute="trailing" secondItem="K0s-0E-a4J" secondAttribute="trailing" constant="89" id="P7c-OP-bJv"/>
                                             <constraint firstItem="geg-bm-vH6" firstAttribute="top" secondItem="FAQ-Ju-EDl" secondAttribute="bottom" constant="16" id="RpT-zI-j3f"/>
@@ -4989,7 +4965,6 @@
                                             <constraint firstItem="T6M-ce-M3Y" firstAttribute="top" secondItem="fzz-ug-RQv" secondAttribute="top" id="pnq-U0-N7Z"/>
                                             <constraint firstAttribute="trailing" secondItem="yRp-LF-EjK" secondAttribute="trailing" constant="8" id="r0w-8m-HHt"/>
                                             <constraint firstItem="10q-7h-ex9" firstAttribute="leading" secondItem="fzz-ug-RQv" secondAttribute="leading" id="tm6-wn-HFP"/>
-                                            <constraint firstItem="geg-bm-vH6" firstAttribute="leading" secondItem="fzz-ug-RQv" secondAttribute="leading" constant="8" id="vgO-Dj-iHP"/>
                                             <constraint firstAttribute="trailing" secondItem="PD8-fo-a7q" secondAttribute="trailing" constant="8" id="wIG-9K-IqM"/>
                                             <constraint firstItem="yRp-LF-EjK" firstAttribute="top" secondItem="FAQ-Ju-EDl" secondAttribute="bottom" constant="59" id="wZ7-PZ-tRg"/>
                                             <constraint firstAttribute="trailing" secondItem="T6M-ce-M3Y" secondAttribute="trailing" id="xH4-mF-mAt"/>
@@ -4997,6 +4972,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="fzz-ug-RQv" secondAttribute="bottom" constant="28" id="GUn-Lr-vhL"/>
                                     <constraint firstItem="fzz-ug-RQv" firstAttribute="leading" secondItem="uV1-pi-8i2" secondAttribute="leading" id="U7q-e3-0QE"/>
@@ -5047,7 +5023,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="uV1-pi-8i2" firstAttribute="bottom" secondItem="Sxg-TV-Fxo" secondAttribute="bottom" id="2FC-Nw-4T1"/>
                             <constraint firstItem="k04-c0-3am" firstAttribute="baseline" secondItem="XV2-qD-gwc" secondAttribute="baseline" id="5Yg-xY-ZiA"/>
@@ -5182,8 +5158,8 @@
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" text="Club Description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oNq-YS-yyP">
                                                 <rect key="frame" x="8" y="314" width="359" height="37.5"/>
-                                                <color key="backgroundColor" red="0.90490476012740118" green="0.91386421319796951" blue="0.91386421319796951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="textColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                                             </textView>
@@ -5194,7 +5170,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="3ix-Xt-eeI" firstAttribute="top" secondItem="o2X-lw-YVH" secondAttribute="top" constant="8" id="2fv-dI-RGs"/>
                                             <constraint firstItem="e6u-ik-SAH" firstAttribute="leading" secondItem="pmt-SW-KVd" secondAttribute="leading" id="3SU-Q4-8s6"/>
@@ -5231,7 +5207,7 @@
                                 <color key="backgroundColor" red="0.27450980390000002" green="0.031372549020000001" blue="0.090196078430000007" alpha="0.94804152399999997" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="VIU-8n-4v7" firstAttribute="top" secondItem="0DX-Mv-x1p" secondAttribute="bottom" id="0cV-Nv-AHQ"/>
                             <constraint firstItem="0DX-Mv-x1p" firstAttribute="top" secondItem="St6-Zo-maQ" secondAttribute="top" id="5nN-Zg-ib3"/>
@@ -5280,7 +5256,7 @@
         <image name="voteArrowEmpty" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lvC-dZ-PRI"/>
+        <segue reference="qH1-Mf-jC9"/>
         <segue reference="u7i-IT-8gd"/>
         <segue reference="Bcw-dD-CBe"/>
         <segue reference="dOO-6f-ACp"/>

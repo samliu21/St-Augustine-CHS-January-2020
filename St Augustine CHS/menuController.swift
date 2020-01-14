@@ -1057,7 +1057,7 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
         let task3 = URLSession.shared.dataTask(with: prayerURL!) { (data, response, error) in
             if let error = error {
                 print("error in finding daily prayer")
-                self.newsData = [["No internet connection","Can't find daily prayer"]]
+                self.dailyPrayerData = ["No internet connection","Can't find daily prayer"]
                 let alert = UIAlertController(title: "Error in retrieveing Daily Prayer", message: "Please Try Again later. Error: \(error.localizedDescription)", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alert.addAction(okAction)

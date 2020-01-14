@@ -1068,9 +1068,12 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
             } else {
                 let htmlContent = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)!
                 self.dailyPrayerData = self.parseDailyPrayer(html: htmlContent as String)
-                print("SUPERCALIFRAGILISTICEXPIALIDOCIOUS \(self.dailyPrayerData[0]) \(self.dailyPrayerData[1])")
+                //print("SUPERCALIFRAGILISTICEXPIALIDOCIOUS \(self.dailyPrayerData[0]) \(self.dailyPrayerData[1])")
                 DispatchQueue.main.async {
                     self.verse.text = self.dailyPrayerData[0]
+                    self.verse.translatesAutoresizingMaskIntoConstraints = true
+                    self.verse.sizeToFit()
+                    self.verse.isScrollEnabled = false
                     self.citation.text = self.dailyPrayerData[1]
                     self.annoucView.reloadData()
                 }
@@ -1098,5 +1101,9 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
             dailyPrayer[1] = "Error"
         }
         return dailyPrayer
+    }
+    
+    @IBAction func didTapPrayer(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: "https://forms.gle/gVqcL4UPv3uX7hVz6")! as URL)
     }
 }

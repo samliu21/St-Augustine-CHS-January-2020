@@ -228,6 +228,26 @@
                                                             <constraint firstAttribute="height" constant="30" id="x19-vU-UJY"/>
                                                         </constraints>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsF-DH-gw2">
+                                                        <rect key="frame" x="57" y="363" width="170" height="37"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="37" id="4pD-Cn-ITZ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="20"/>
+                                                        <state key="normal" title="Prayer Request">
+                                                            <color key="titleColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didTapPrayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2pk-Vc-lG2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2YU-Wg-bQL">
+                                                        <rect key="frame" x="14" y="369" width="31" height="27"/>
+                                                        <color key="tintColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="dIu-ob-Kcq"/>
+                                                        </constraints>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -235,6 +255,7 @@
                                                     <constraint firstItem="3G5-hW-WiM" firstAttribute="leading" secondItem="cAn-aQ-T8o" secondAttribute="leading" id="5K3-uj-VXi"/>
                                                     <constraint firstItem="8AA-gT-si0" firstAttribute="leading" secondItem="KxN-jz-D1T" secondAttribute="trailing" constant="13" id="5nc-X9-9Yb"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="top" secondItem="1Jl-dc-Hrw" secondAttribute="bottom" constant="21" id="9i5-Q8-mHK"/>
+                                                    <constraint firstItem="MsF-DH-gw2" firstAttribute="top" secondItem="pTW-BS-PLe" secondAttribute="bottom" constant="8" id="9iX-lB-bzz"/>
                                                     <constraint firstItem="8AA-gT-si0" firstAttribute="top" secondItem="PjR-Ip-86O" secondAttribute="bottom" constant="13" id="AkO-7Z-A52"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="leading" secondItem="veQ-6W-5kP" secondAttribute="leading" id="B1a-x7-EAP"/>
                                                     <constraint firstItem="3G5-hW-WiM" firstAttribute="trailing" secondItem="cfm-Mj-2lV" secondAttribute="trailing" id="BDM-K6-KoG"/>
@@ -245,10 +266,13 @@
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="trailing" secondItem="ZMV-k5-aAe" secondAttribute="trailing" id="JjW-jE-VMx"/>
                                                     <constraint firstItem="KxN-jz-D1T" firstAttribute="top" secondItem="8k3-HD-byl" secondAttribute="bottom" constant="23" id="Qg2-JG-QRV"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="leading" secondItem="1Jl-dc-Hrw" secondAttribute="leading" id="Qkw-uu-xeh"/>
+                                                    <constraint firstItem="2YU-Wg-bQL" firstAttribute="top" secondItem="gpF-dK-eU6" secondAttribute="bottom" constant="20.5" id="SLY-nw-ZFe"/>
                                                     <constraint firstItem="pTW-BS-PLe" firstAttribute="trailing" secondItem="Hkj-Wx-aMJ" secondAttribute="trailing" id="Ss7-0O-Nod"/>
+                                                    <constraint firstItem="2YU-Wg-bQL" firstAttribute="leading" secondItem="BVn-Ji-FU2" secondAttribute="leading" constant="14" id="TGc-Wm-pEV"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="leading" secondItem="ZMV-k5-aAe" secondAttribute="leading" id="Tda-mh-fE3"/>
                                                     <constraint firstItem="8k3-HD-byl" firstAttribute="leading" secondItem="BVn-Ji-FU2" secondAttribute="leading" constant="14" id="U00-Wl-MhZ"/>
                                                     <constraint firstItem="3G5-hW-WiM" firstAttribute="top" secondItem="cAn-aQ-T8o" secondAttribute="bottom" constant="8" id="USZ-Va-A3I"/>
+                                                    <constraint firstItem="MsF-DH-gw2" firstAttribute="leading" secondItem="2YU-Wg-bQL" secondAttribute="trailing" constant="12" id="UjF-6t-TDT"/>
                                                     <constraint firstItem="Qd4-Ox-kpx" firstAttribute="top" secondItem="KxN-jz-D1T" secondAttribute="bottom" constant="24" id="V9g-oj-vRg"/>
                                                     <constraint firstItem="veQ-6W-5kP" firstAttribute="top" secondItem="ZMV-k5-aAe" secondAttribute="bottom" constant="18" id="X3N-kk-oLl"/>
                                                     <constraint firstItem="ZMV-k5-aAe" firstAttribute="top" secondItem="Qd4-Ox-kpx" secondAttribute="bottom" constant="20" id="Ywm-tT-V6k"/>
@@ -258,10 +282,12 @@
                                                     <constraint firstItem="cAn-aQ-T8o" firstAttribute="leading" secondItem="ZMV-k5-aAe" secondAttribute="trailing" constant="13" id="h1E-tv-6mk"/>
                                                     <constraint firstItem="PjR-Ip-86O" firstAttribute="centerY" secondItem="8k3-HD-byl" secondAttribute="centerY" id="iha-Jo-Zhm"/>
                                                     <constraint firstItem="Hkj-Wx-aMJ" firstAttribute="top" secondItem="3G5-hW-WiM" secondAttribute="bottom" constant="8" id="iwY-ES-fE3"/>
+                                                    <constraint firstItem="MsF-DH-gw2" firstAttribute="leading" secondItem="pTW-BS-PLe" secondAttribute="leading" id="j1D-GV-xFx"/>
                                                     <constraint firstItem="PjR-Ip-86O" firstAttribute="top" secondItem="BVn-Ji-FU2" secondAttribute="top" constant="14" id="mW2-bU-qhx"/>
                                                     <constraint firstAttribute="width" constant="227" id="oAi-E3-ris"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="trailing" secondItem="1Jl-dc-Hrw" secondAttribute="trailing" id="owt-oR-37u"/>
                                                     <constraint firstItem="3G5-hW-WiM" firstAttribute="trailing" secondItem="Hkj-Wx-aMJ" secondAttribute="trailing" id="pQI-98-hPh"/>
+                                                    <constraint firstItem="2YU-Wg-bQL" firstAttribute="leading" secondItem="gpF-dK-eU6" secondAttribute="leading" id="pvr-CQ-neG"/>
                                                     <constraint firstItem="pTW-BS-PLe" firstAttribute="leading" secondItem="Hkj-Wx-aMJ" secondAttribute="leading" id="rbU-aG-pWk"/>
                                                     <constraint firstItem="cfm-Mj-2lV" firstAttribute="top" secondItem="8AA-gT-si0" secondAttribute="bottom" constant="15" id="tLM-uw-dDK"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="trailing" secondItem="veQ-6W-5kP" secondAttribute="trailing" id="wdw-02-0KS"/>
@@ -327,6 +353,7 @@
                                                             <constraint firstAttribute="height" constant="30" id="GMH-7T-zfJ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="19"/>
+                                                        <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCo-Ct-GwT">
@@ -335,6 +362,7 @@
                                                             <constraint firstAttribute="height" constant="25" id="WDq-mE-rfS"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All buses have been cancelled today!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Py-Ha-p8F">
@@ -562,20 +590,22 @@
                                                 <color key="textColor" red="0.5" green="0.0767248403" blue="0.1712033674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Verse" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-FH-PzW" userLabel="Verse">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Verse" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-FH-PzW" userLabel="Verse">
                                                 <rect key="frame" x="8" y="734" width="359" height="132"/>
                                                 <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" constant="359" id="LLf-5M-9FW"/>
                                                     <constraint firstAttribute="height" constant="132" id="n8g-1B-kPF"/>
                                                 </constraints>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Citation" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaM-wJ-iS7" userLabel="Citation">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Citation" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaM-wJ-iS7" userLabel="Citation">
                                                 <rect key="frame" x="8" y="867" width="359" height="42"/>
                                                 <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" constant="359" id="MMr-hj-erw"/>
                                                     <constraint firstAttribute="height" constant="42" id="llq-FZ-9gz"/>
                                                 </constraints>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4650,12 +4680,11 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
                         <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Got any questions to add?  Visit our site at https://app.staugustinechs.ca/!" textAlignment="center" id="JYZ-ZA-zr4">
-                            <rect key="frame" x="0.0" y="140" width="375" height="47"/>
+                            <rect key="frame" x="0.0" y="141" width="375" height="73"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             <dataDetectorType key="dataDetectorTypes" link="YES"/>
                         </textView>
@@ -5243,6 +5272,7 @@
     <resources>
         <image name="3Dots" width="24" height="24"/>
         <image name="blankUser" width="236" height="236"/>
+        <image name="book" catalog="system" width="64" height="50"/>
         <image name="cafe" width="60" height="60"/>
         <image name="clubs" width="60" height="60"/>
         <image name="faq" width="400" height="400"/>

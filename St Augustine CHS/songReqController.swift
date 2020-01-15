@@ -630,7 +630,6 @@ class songReqController: UIViewController, UICollectionViewDataSource, UICollect
             cell.voteCount.textColor = UIColor(red: 255/255.0, green: 171/255.0, blue: 35/255.0, alpha: 1.0)
         } else {
             cell.voteArrow.image = UIImage(named: "voteArrowEmpty")
-            cell.voteCount.textColor = UIColor.darkText
         }
         
         //Drop shadow

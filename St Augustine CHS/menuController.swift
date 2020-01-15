@@ -35,6 +35,7 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet weak var menuScrollView: UIScrollView!
     @IBOutlet weak var buttonsView: UIView!
     @IBOutlet var homeView: UIView!
+    @IBOutlet weak var verseView: UIView!
     @IBOutlet weak var tapOutOfMenuButton: UIButton!
     @IBOutlet weak var dateToString: UILabel!
     @IBOutlet weak var dayNumber: UILabel!
@@ -560,10 +561,12 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
         if clubNewsData.count == 0 {
             clubAnncHeight.constant = 0
             self.clubAnncView.reloadData()
+            //clubAnnouncementsLabel.isHidden = true
             return
         }
         
         if clubNewsData.count > 1 {
+            //clubAnnouncementsLabel.isHidden = false
             var thereWasASwap = true
             while thereWasASwap {
                 thereWasASwap = false
@@ -696,7 +699,7 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
         //There is really no reason this should be here, i just need it to run at leats once. maybe it could be put in sizeForItemAt or even numberOfItemsInSection
         //As long as this auto adjusts to the length of the height
         calendarButton.isHidden = false
-        let height = self.annoucView.contentSize.height + self.clubAnncView.contentSize.height + 340
+        let height = self.annoucView.contentSize.height + self.clubAnncView.contentSize.height + self.verseView.frame.size.height + 340
         self.anncViewHeight.constant = self.annoucView.contentSize.height + 10
         self.clubAnncHeight.constant = self.clubAnncView.contentSize.height + 10
         

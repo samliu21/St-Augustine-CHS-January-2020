@@ -34,8 +34,8 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var menuScrollView: UIScrollView!
     @IBOutlet weak var buttonsView: UIView!
+    @IBOutlet weak var buttonsViewHeight: NSLayoutConstraint!
     @IBOutlet var homeView: UIView!
-    @IBOutlet weak var verseView: UIView!
     @IBOutlet weak var tapOutOfMenuButton: UIButton!
     @IBOutlet weak var dateToString: UILabel!
     @IBOutlet weak var dayNumber: UILabel!
@@ -335,7 +335,7 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
         
         //If the screen is too small to fit all menu buttons, just change the height to whatever it is
         if UIScreen.main.bounds.height <= 568.0 {
-            menuScrollView.contentSize.height = buttonsView.frame.size.height + 61.0
+            menuScrollView.contentSize.height = buttonsView.frame.size.height
         }
     }
     
@@ -699,7 +699,7 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
         //There is really no reason this should be here, i just need it to run at leats once. maybe it could be put in sizeForItemAt or even numberOfItemsInSection
         //As long as this auto adjusts to the length of the height
         calendarButton.isHidden = false
-        let height = self.annoucView.contentSize.height + self.clubAnncView.contentSize.height + self.verseView.frame.size.height + 340
+        let height = self.annoucView.contentSize.height + self.clubAnncView.contentSize.height + self.verse.frame.size.height + 420
         self.anncViewHeight.constant = self.annoucView.contentSize.height + 10
         self.clubAnncHeight.constant = self.clubAnncView.contentSize.height + 10
         

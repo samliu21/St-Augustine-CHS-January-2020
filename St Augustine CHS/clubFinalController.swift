@@ -579,9 +579,9 @@ class clubFinalController: UIViewController, UICollectionViewDataSource, UIColle
                         }, completion: { (object, err) in
                             if let error = err {
                                 print("Transaction failed: \(error)")
-                                let ac = UIAlertController(title: "Could not give points to user", message: "Error: \(error.localizedDescription)", preferredStyle: .alert)
+                                /*let ac = UIAlertController(title: "Could not give points to user", message: "Error: \(error.localizedDescription)", preferredStyle: .alert)
                                 ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                                self.present(ac, animated: true)
+                                self.present(ac, animated: true)*/
                             } else {
                                 print("Transaction successfully committed!")
                                 

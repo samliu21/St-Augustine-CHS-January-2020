@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -70,6 +70,7 @@
 		B9FECC012191337F0006CCE3 /* badgesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FECC002191337F0006CCE3 /* badgesViewCell.swift */; };
 		B9FECC03219133950006CCE3 /* socialClubsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FECC02219133950006CCE3 /* socialClubsViewCell.swift */; };
 		E03E9C42238106960031ED65 /* FAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E9C41238106960031ED65 /* FAQCell.swift */; };
+		E0AC6D5823CFCC4F000C2ADA /* spiritPointsSystemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AC6D5723CFCC4F000C2ADA /* spiritPointsSystemController.swift */; };
 		F809FDE942DCA859F641F0F2 /* Pods_St_Augustine_CHSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75B937A126460DA4A7207A5 /* Pods_St_Augustine_CHSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -168,6 +169,7 @@
 		CE9334E3157123B318D61742 /* Pods_St_Augustine_CHSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_St_Augustine_CHSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0A2CADB30E2164FAD0BA9A /* Pods-St Augustine CHSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-St Augustine CHSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-St Augustine CHSUITests/Pods-St Augustine CHSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E03E9C41238106960031ED65 /* FAQCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
+		E0AC6D5723CFCC4F000C2ADA /* spiritPointsSystemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spiritPointsSystemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,16 +266,17 @@
 				B958A26321C4023A00726345 /* cafeMenuController.swift */,
 				B9876BAD217AC9E800D57C16 /* clubListController.swift */,
 				B90669C92186ACF100CAA824 /* addClubController.swift */,
-				B91E7DF021E9473C00BA499B /* clubFinalController.swift */,
-				B95D36A021DAC1270037903F /* badgeScannerController.swift */,
-				B9BFE8C421DD66BD00BDB5F1 /* createBadgeController.swift */,
 				B995CFF3218F8600004970E0 /* editClubDetailsController.swift */,
+				B91E7DF021E9473C00BA499B /* clubFinalController.swift */,
 				B9AE583F21D563990067B904 /* clubPendingController.swift */,
 				B9AE584321D582F00067B904 /* clubMembersController.swift */,
+				B95D36A021DAC1270037903F /* badgeScannerController.swift */,
+				B9BFE8C421DD66BD00BDB5F1 /* createBadgeController.swift */,
 				B90669C72186851800CAA824 /* addAnncController.swift */,
 				B958069C218209AA00B3EE70 /* songReqController.swift */,
 				B961424F21B6193F0070F27B /* suggestASongController.swift */,
 				B9E67F8721B86B7300836A65 /* spiritMeterController.swift */,
+				E0AC6D5723CFCC4F000C2ADA /* spiritPointsSystemController.swift */,
 				B98BB1B021CAF4F000AD6167 /* titanTagController.swift */,
 				B9ACA1EB21755BBD00302C4B /* settingsController.swift */,
 				B9FECBFE219131E30006CCE3 /* socialController.swift */,
@@ -661,6 +664,7 @@
 				B958FB54218FC582004C99F0 /* clubListFooterViewCell.swift in Sources */,
 				B9C6E35F21ACBFF200A03650 /* semester2ViewCell.swift in Sources */,
 				B918547021B4B29000DA14F5 /* picsNotOwnedViewCell.swift in Sources */,
+				E0AC6D5823CFCC4F000C2ADA /* spiritPointsSystemController.swift in Sources */,
 				B9AE584021D563990067B904 /* clubPendingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

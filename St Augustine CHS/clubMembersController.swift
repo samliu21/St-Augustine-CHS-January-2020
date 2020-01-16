@@ -520,9 +520,9 @@ class clubMembersController: UIViewController, UICollectionViewDataSource, UICol
         }, completion: { (object, err) in
             if let error = err {
                 print("Transaction failed: \(error)")
-               /* let ac = UIAlertController(title: "Could not give points to user", message: "Error: \(error.localizedDescription)", preferredStyle: .alert)
+                let ac = UIAlertController(title: "Could not give points to user", message: "Error: \(error.localizedDescription)", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self.present(ac, animated: true)*/
+                self.present(ac, animated: true)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                     self.getClubData()
                 })
@@ -555,9 +555,9 @@ class clubMembersController: UIViewController, UICollectionViewDataSource, UICol
                 }, completion: { (object, err) in
                     if let error = err {
                         print("Transaction failed: \(error)")
-                        let ac = UIAlertController(title: "Transaction Error: Grad - \(gradYear)", message: "Error: \(error.localizedDescription)", preferredStyle: .alert)
+                        /*let ac = UIAlertController(title: "Transaction Error: Grad - \(gradYear)", message: "Error: \(error.localizedDescription)", preferredStyle: .alert)
                         ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                        self.present(ac, animated: true)
+                        self.present(ac, animated: true)*/
                     } else {
                         print("Transaction successfully committed!")
                         print("successfuly gave badge")

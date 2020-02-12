@@ -9,6 +9,8 @@
 import UIKit
 
 class cafemenuCell: UICollectionViewCell {
+    
     @IBOutlet weak var foodLabel: UILabel!
+    @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
 }

@@ -13,4 +13,7 @@ class cafemenuCell: UICollectionViewCell {
     @IBOutlet weak var foodLabel: UILabel!
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var foodLabel2: UILabel!
+    @IBOutlet weak var priceLabel2: UILabel!
+    @IBOutlet weak var foodImage2: UIImageView!
 }

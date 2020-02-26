@@ -34,6 +34,13 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
     var theActualMenu = [[Any]]()
     var theActualRegularMenu = [[Any]]()
     
+    //Cafe menu pictures variables
+    var picRarities = [Int]()
+    var picsNotSavedNums = [Int]()
+    var picsNotSaved = [UIImage]()
+    var fillerImage = UIImage(named: "blankUser")!
+    var downloadedImagesCount = 0
+    
     var isWeekend = false
     
     override func viewDidLoad() {
@@ -127,15 +134,72 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func getCafeImages(){
-        db.collection("info").document("cafMenuImages").getDocument { (snap, err) in
-            if let err = err {
-                let alert = UIAlertController (title: "Error in getting cafe menu picture", message: "Error: \(err.localizedDescription)", preferredStyle:.alert)
+        db.collection("info").document("cafMenuImages").getDocument { (snapshot, error) in
+            if let error = error {
+                print(error)
+                let alert = UIAlertController(title: "Error in getting caf menu pictures", message: "Error: \(error.localizedDescription)", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alert.addAction(okAction)
                 self.present(alert, animated: true, completion: nil)
+                self.hideActivityIndicator(container: self.container, actInd: self.actInd)
             }
-            if let snap = snap {
-                for (food,)
+            if let data = snapshot?.data() {
+                self.picRarities = data["rarities"] as! [Int]
+                self.getAllPics()
+            }
+        }
+        
+        for i in 0...self.picRarities.count-1 {
+            //Set up the pics not owned num array
+            picsNotSavedNums.append(i)
+            
+            let storage = Storage.storage()
+            let storageRef = storage.reference()
+            
+            // Create a reference to the file you want to download
+            let imgRef = storageRef.child("profilePictures/\(i).png")
+            
+            imgRef.getMetadata { (metadata, error) in
+                if let error = error {
+                    // Uh-oh, an error occurred!
+                    print("cant find image \(i)")
+                    print(error)
+                    self.picsNotSaved[i] = self.fillerImage
+                } else {
+                    if let metadata = metadata {
+                        let theMetaData = metadata.dictionaryRepresentation()
+                        let updated = theMetaData["updated"]
+                        
+                        if let updated = updated {
+                            if let savedImage = self.getSavedImage(named: "\(i)=\(updated)"){
+                                //print("already saved \(i)=\(updated)")
+                                self.picsNotSaved[i] = savedImage
+                                //print(self.picsNotOwned)
+                            } else {
+                                // Create a reference to the file you want to download
+                                imgRef.downloadURL { url, error in
+                                    if error != nil {
+                                        //print(error)
+                                        print("cant find image \(i) + \(self.picsNotSaved[i])")
+                                        self.picsNotSaved[i] = self.fillerImage
+                                    } else {
+                                        self.downloadedImagesCount += 1
+                                        // Get the download URL
+                                        var image: UIImage?
+                                        let data = try? Data(contentsOf: url!)
+                                        if let imageData = data {
+                                            image = UIImage(data: imageData)!
+                                            self.picsNotSaved[i] = image!
+                                            self.clearImageFolder(imageName: "\(i)=\(updated)")
+                                            self.saveImageDocumentDirectory(image: image!, imageName: "\(i)=\(updated)")
+                                        }
+                                        print("i got a new image")
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

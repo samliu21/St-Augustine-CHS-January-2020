@@ -932,7 +932,7 @@
                         <outlet property="daymenuLabel" destination="fWi-Vc-ekO" id="tQx-Tz-MUd"/>
                         <outlet property="daymenuLabelHeight" destination="EKi-sq-boI" id="mZ6-bQ-kIg"/>
                         <outlet property="lineBetweenMenuHeights" destination="BLL-XA-qR7" id="JdZ-Iz-s7k"/>
-                        <outlet property="menuCollectionView" destination="t3e-gL-BPd" id="hmp-oA-s6u"/>
+                        <outlet property="menuCollectionView" destination="t3e-gL-BPd" id="1Fr-Fc-Kuy"/>
                         <outlet property="menuCollectionViewHeight" destination="VRN-x1-tSq" id="klc-OF-gYm"/>
                         <outlet property="regularMenuCollectionView" destination="GXz-0n-mgV" id="kfl-8Y-d95"/>
                         <outlet property="regularMenuCollectionViewHeight" destination="eJD-jn-ZKd" id="P4k-8m-DOJ"/>
@@ -4730,7 +4730,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
                         <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Got any questions to add?  Visit our site at https://app.staugustinechs.ca/!" textAlignment="center" id="JYZ-ZA-zr4">
-                            <rect key="frame" x="0.0" y="140" width="375" height="58"/>
+                            <rect key="frame" x="0.0" y="140" width="375" height="53"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>

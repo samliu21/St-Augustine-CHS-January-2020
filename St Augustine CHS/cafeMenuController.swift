@@ -30,6 +30,9 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var topofmenuHeight: NSLayoutConstraint!
     @IBOutlet weak var topoflineHeight: NSLayoutConstraint!
     
+    //Refresh vars
+    let actInd: UIActivityIndicatorView = UIActivityIndicatorView()
+    let container: UIView = UIView()
     
     var theActualMenu = [[Any]]()
     var theActualRegularMenu = [[Any]]()
@@ -95,6 +98,11 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
             topofmenuHeight.constant = 0
         }
         
+        //sets dimensions for individual cells. The number of cells is determined by the size fo the cells, you can't change it within the storyboard.
+        let width = view.frame.size.width/3
+        let layout = menuCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.itemSize = CGSize(width: width, height: width)
+        
         getCafeMenu()
         getRegularMenu()
     }
@@ -157,6 +165,74 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
             let storageRef = storage.reference()
             
             // Create a reference to the file you want to download
+            let imgRef = storageRef.child("cafMenu/\(i).png")
+            
+            imgRef.getMetadata { (metadata, error) in
+                if let error = error {
+                    // Uh-oh, an error occurred!
+                    print("cant find image \(i)")
+                    print(error)
+                    self.picsNotSaved[i] = self.fillerImage
+                } else {
+                    if let metadata = metadata {
+                        let theMetaData = metadata.dictionaryRepresentation()
+                        let updated = theMetaData["updated"]
+                        
+                        if let updated = updated {
+                            if let savedImage = self.getSavedImage(named: "\(i)=\(updated)"){
+                                //print("already saved \(i)=\(updated)")
+                                self.picsNotSaved[i] = savedImage
+                                //print(self.picsNotOwned)
+                            } else {
+                                // Create a reference to the file you want to download
+                                imgRef.downloadURL { url, error in
+                                    if error != nil {
+                                        //print(error)
+                                        print("cant find image \(i) + \(self.picsNotSaved[i])")
+                                        self.picsNotSaved[i] = self.fillerImage
+                                    } else {
+                                        self.downloadedImagesCount += 1
+                                        // Get the download URL
+                                        var image: UIImage?
+                                        let data = try? Data(contentsOf: url!)
+                                        if let imageData = data {
+                                            image = UIImage(data: imageData)!
+                                            self.picsNotSaved[i] = image!
+                                            self.clearImageFolder(imageName: "\(i)=\(updated)")
+                                            self.saveImageDocumentDirectory(image: image!, imageName: "\(i)=\(updated)")
+                                        }
+                                        print("i got a new image")
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    func getAllPics() {
+        //Get the profile pictures
+        self.picsNotSaved = [UIImage](repeating: self.fillerImage, count: picRarities.count)
+        
+        //Just for safety get out of here to prevent going from 0 to -1
+        if picsNotSaved.count == 0 {
+            let alert = UIAlertController(title: "Error in getting profile pictures", message: "Try again later", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
+            self.hideActivityIndicator(container: self.container, actInd: self.actInd)
+            return
+        }
+        
+        for i in 0...self.picRarities.count-1 {
+            //Set up the pics not owned num array
+            picsNotSavedNums.append(i)
+            
+            let storage = Storage.storage()
+            let storageRef = storage.reference()
+            
+            // Create a reference to the file you want to download
             let imgRef = storageRef.child("profilePictures/\(i).png")
             
             imgRef.getMetadata { (metadata, error) in
@@ -201,6 +277,9 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
                     }
                 }
             }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            print("hey i am done getting imgs now format them")
         }
     }
     
@@ -320,7 +399,7 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let height = self.menuCollectionView.contentSize.height + self.regularMenuCollectionView.contentSize.height + 100
+  //      let height = self.menuCollectionView.contentSize.height + self.regularMenuCollectionView.contentSize.height + 100
         
         if !isWeekend {
             self.menuCollectionViewHeight.constant = self.menuCollectionView.contentSize.height + 10
@@ -329,11 +408,11 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
         self.regularMenuCollectionViewHeight.constant = self.regularMenuCollectionView.contentSize.height + 10
         
         //If the screen is too small to fit all announcements, just change the height to whatever it is
-        if height > UIScreen.main.bounds.height {
-            self.cafeViewHeight.constant = height
-        } else {
-            self.cafeViewHeight.constant = UIScreen.main.bounds.height
-        }
+  //      if height > UIScreen.main.bounds.height {
+  //          self.cafeViewHeight.constant = height
+  //      } else {
+  //          self.cafeViewHeight.constant = UIScreen.main.bounds.height
+  //      }
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "food", for: indexPath) as! cafemenuCell
         
@@ -347,6 +426,11 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
             
             cell.foodLabel.text = theActualMenu[indexPath.item][0] as? String ?? "Error"
             cell.priceLabel.text = ("$" + (formatter.string(from: priceNSNumber) ?? "Error"))
+            
+            for i in 0...33{
+                if cell.foodLabel.text == storage.cafMenu
+            }
+            
         } else {
             let price = theActualRegularMenu[indexPath.item][1] as? Double ?? -1
             let priceNSNumber = NSNumber(value: price)

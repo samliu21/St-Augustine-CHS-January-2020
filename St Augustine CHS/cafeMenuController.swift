@@ -105,6 +105,7 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
         
         getCafeMenu()
         getRegularMenu()
+        getAllPics()
     }
     
     func getCafeMenu(){
@@ -123,6 +124,7 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
             }
         }
     }
+    
     
     func getRegularMenu(){
         db.collection("info").document("cafMenuRegular").getDocument { (snap, err) in
@@ -212,12 +214,12 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
         }
     }
     func getAllPics() {
-        //Get the profile pictures
+        //Get the caf menu pictures
         self.picsNotSaved = [UIImage](repeating: self.fillerImage, count: picRarities.count)
         
         //Just for safety get out of here to prevent going from 0 to -1
         if picsNotSaved.count == 0 {
-            let alert = UIAlertController(title: "Error in getting profile pictures", message: "Try again later", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error in getting cafe pictures", message: "Try again later", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alert.addAction(okAction)
             self.present(alert, animated: true, completion: nil)
@@ -233,7 +235,7 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
             let storageRef = storage.reference()
             
             // Create a reference to the file you want to download
-            let imgRef = storageRef.child("profilePictures/\(i).png")
+            let imgRef = storageRef.child("cafMenu/\(i).png")
             
             imgRef.getMetadata { (metadata, error) in
                 if let error = error {
@@ -425,21 +427,26 @@ class cafeMenuController: UIViewController, UICollectionViewDataSource, UICollec
             let priceNSNumber = NSNumber(value: price)
             
             cell.foodLabel.text = theActualMenu[indexPath.item][0] as? String ?? "Error"
+            cell.foodLabel.textColor = Defaults.primaryColor
+
             cell.priceLabel.text = ("$" + (formatter.string(from: priceNSNumber) ?? "Error"))
-            
-            for i in 0...33{
-                if cell.foodLabel.text == storage.cafMenu
-            }
+            cell.priceLabel.textColor = Defaults.primaryColor
+            cell.foodImage = nil
             
         } else {
             let price = theActualRegularMenu[indexPath.item][1] as? Double ?? -1
             let priceNSNumber = NSNumber(value: price)
             
-            cell.foodLabel.text = theActualRegularMenu[indexPath.item][0] as? String ?? "Error"
-            cell.priceLabel.text = ("$" + (formatter.string(from: priceNSNumber) ?? "Error"))
+            cell.foodLabel2.text = theActualRegularMenu[indexPath.item][0] as? String ?? "Error"
+            cell.foodLabel2.textColor = Defaults.primaryColor
+            
+            cell.priceLabel2.text = ("$" + (formatter.string(from: priceNSNumber) ?? "Error"))
+            cell.priceLabel2.textColor = Defaults.primaryColor
+            
+            cell.foodImage2 = nil
+            //cell.foodImage = self.getSavedImage('1')
+
         }
-        
-        cell.priceLabel.textColor = Defaults.primaryColor
         return cell
     }
     

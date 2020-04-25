@@ -334,7 +334,7 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
         profilePicture.image = allUserFirebaseData.profilePic
         
         //If the screen is too small to fit all menu buttons, just change the height to whatever it is
-        if UIScreen.main.bounds.height <= 568.0 {
+        if UIScreen.main.bounds.height <= 1000 {
             menuScrollView.contentSize.height = buttonsView.frame.size.height
         }
     }
@@ -1108,5 +1108,9 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
     
     @IBAction func didTapPrayer(_ sender: Any) {
         UIApplication.shared.open(NSURL(string: "https://forms.gle/gVqcL4UPv3uX7hVz6")! as URL)
+    }
+    
+    @IBAction func didTapTwitter(_ sender: UIButton) {
+        UIApplication.shared.open(NSURL(string:"https://twitter.com/STAUpdates")! as URL)
     }
 }

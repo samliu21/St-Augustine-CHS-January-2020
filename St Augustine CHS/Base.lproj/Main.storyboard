@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C1Q-We-Oq9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C1Q-We-Oq9">
     <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,8 +24,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1156"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmE-2m-EIZ">
-                                <rect key="frame" x="0.0" y="0.0" width="226.5" height="1156"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZmE-2m-EIZ">
+                                <rect key="frame" x="0.0" y="0.0" width="219" height="687"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1t-R2-2No">
                                         <rect key="frame" x="0.0" y="0.0" width="226.5" height="198"/>
@@ -80,8 +80,8 @@
                                             <constraint firstItem="v8j-0f-I2F" firstAttribute="leading" secondItem="vrZ-mV-u1U" secondAttribute="leading" id="t1M-it-RVz"/>
                                         </constraints>
                                     </view>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io6-Yf-S5L" userLabel="Menu Scroll View">
-                                        <rect key="frame" x="0.0" y="196" width="227" height="960"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io6-Yf-S5L" userLabel="Menu Scroll View">
+                                        <rect key="frame" x="0.0" y="196" width="227" height="471"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVn-Ji-FU2" userLabel="Buttons View">
                                                 <rect key="frame" x="0.0" y="0.0" width="227" height="1102"/>
@@ -248,6 +248,23 @@
                                                             <constraint firstAttribute="height" constant="27" id="dIu-ob-Kcq"/>
                                                         </constraints>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZG-XK-9Vm" userLabel="Twitter">
+                                                        <rect key="frame" x="57" y="414" width="119" height="38"/>
+                                                        <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="20"/>
+                                                        <state key="normal" title="Twitter">
+                                                            <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didTapTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDv-5C-Hpm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="ip6-nU-uu2">
+                                                        <rect key="frame" x="10" y="414" width="38" height="38"/>
+                                                        <color key="tintColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="38" id="29y-GY-gDI"/>
+                                                        </constraints>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -263,8 +280,12 @@
                                                     <constraint firstItem="PjR-Ip-86O" firstAttribute="leading" secondItem="8k3-HD-byl" secondAttribute="trailing" constant="13" id="Dmx-C5-K5y"/>
                                                     <constraint firstItem="ZMV-k5-aAe" firstAttribute="leading" secondItem="BVn-Ji-FU2" secondAttribute="leading" constant="14" id="G9d-5K-3c6"/>
                                                     <constraint firstItem="1Jl-dc-Hrw" firstAttribute="top" secondItem="veQ-6W-5kP" secondAttribute="bottom" constant="18" id="Ius-X1-TGQ"/>
+                                                    <constraint firstItem="ip6-nU-uu2" firstAttribute="centerX" secondItem="2YU-Wg-bQL" secondAttribute="centerX" id="JdD-TI-Cit"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="trailing" secondItem="ZMV-k5-aAe" secondAttribute="trailing" id="JjW-jE-VMx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CZG-XK-9Vm" secondAttribute="trailing" constant="51" id="KIx-pc-vUv"/>
+                                                    <constraint firstItem="CZG-XK-9Vm" firstAttribute="top" secondItem="MsF-DH-gw2" secondAttribute="bottom" constant="8" id="Klg-0c-dYS"/>
                                                     <constraint firstAttribute="height" constant="1102" id="OIJ-Pa-UUQ"/>
+                                                    <constraint firstItem="CZG-XK-9Vm" firstAttribute="leading" secondItem="ip6-nU-uu2" secondAttribute="trailing" constant="9" id="Ptb-3o-jS9"/>
                                                     <constraint firstItem="KxN-jz-D1T" firstAttribute="top" secondItem="8k3-HD-byl" secondAttribute="bottom" constant="23" id="Qg2-JG-QRV"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="leading" secondItem="1Jl-dc-Hrw" secondAttribute="leading" id="Qkw-uu-xeh"/>
                                                     <constraint firstItem="2YU-Wg-bQL" firstAttribute="top" secondItem="gpF-dK-eU6" secondAttribute="bottom" constant="24" id="SLY-nw-ZFe"/>
@@ -278,6 +299,9 @@
                                                     <constraint firstItem="MsF-DH-gw2" firstAttribute="trailing" secondItem="pTW-BS-PLe" secondAttribute="trailing" id="Yc6-Vm-sI8"/>
                                                     <constraint firstItem="ZMV-k5-aAe" firstAttribute="top" secondItem="Qd4-Ox-kpx" secondAttribute="bottom" constant="20" id="Ywm-tT-V6k"/>
                                                     <constraint firstItem="pTW-BS-PLe" firstAttribute="leading" secondItem="gpF-dK-eU6" secondAttribute="trailing" constant="13" id="a53-fM-EFM"/>
+                                                    <constraint firstItem="CZG-XK-9Vm" firstAttribute="leading" secondItem="MsF-DH-gw2" secondAttribute="leading" id="bNZ-VU-5wX"/>
+                                                    <constraint firstItem="ip6-nU-uu2" firstAttribute="centerY" secondItem="CZG-XK-9Vm" secondAttribute="centerY" id="cML-pE-tmd"/>
+                                                    <constraint firstItem="ip6-nU-uu2" firstAttribute="top" secondItem="CZG-XK-9Vm" secondAttribute="top" id="dxX-RM-UKp"/>
                                                     <constraint firstItem="cAn-aQ-T8o" firstAttribute="top" secondItem="cfm-Mj-2lV" secondAttribute="bottom" constant="10" id="fYt-Pk-3nd"/>
                                                     <constraint firstItem="3G5-hW-WiM" firstAttribute="leading" secondItem="Hkj-Wx-aMJ" secondAttribute="leading" id="gme-Nh-tmy"/>
                                                     <constraint firstItem="cAn-aQ-T8o" firstAttribute="leading" secondItem="ZMV-k5-aAe" secondAttribute="trailing" constant="13" id="h1E-tv-6mk"/>
@@ -312,8 +336,6 @@
                                             <constraint firstItem="BVn-Ji-FU2" firstAttribute="top" secondItem="Io6-Yf-S5L" secondAttribute="top" id="v62-na-IkW"/>
                                             <constraint firstAttribute="trailing" secondItem="BVn-Ji-FU2" secondAttribute="trailing" id="v9a-wK-oIK"/>
                                         </constraints>
-                                        <viewLayoutGuide key="contentLayoutGuide" id="Xeu-n8-fY7"/>
-                                        <viewLayoutGuide key="frameLayoutGuide" id="Ykf-Lc-syF"/>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -4736,7 +4758,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
                         <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Got any questions to add?  Visit our site at https://app.staugustinechs.ca/!" textAlignment="center" id="JYZ-ZA-zr4">
-                            <rect key="frame" x="0.0" y="140" width="375" height="75"/>
+                            <rect key="frame" x="0.0" y="140" width="375" height="70"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5325,6 +5347,14 @@
             <point key="canvasLocation" x="1041" y="1016"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qH1-Mf-jC9"/>
+        <segue reference="u7i-IT-8gd"/>
+        <segue reference="Bcw-dD-CBe"/>
+        <segue reference="dOO-6f-ACp"/>
+        <segue reference="ZPw-sW-YUi"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="3Dots" width="24" height="24"/>
         <image name="blankUser" width="236" height="236"/>
@@ -5339,14 +5369,7 @@
         <image name="spiritPoints" width="60" height="60"/>
         <image name="stalogo" width="430" height="427"/>
         <image name="titanTag" width="60" height="60"/>
+        <image name="twitter" width="512" height="512"/>
         <image name="voteArrowEmpty" width="48" height="48"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="qH1-Mf-jC9"/>
-        <segue reference="u7i-IT-8gd"/>
-        <segue reference="Bcw-dD-CBe"/>
-        <segue reference="dOO-6f-ACp"/>
-        <segue reference="ZPw-sW-YUi"/>
-    </inferredMetricsTieBreakers>
-    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

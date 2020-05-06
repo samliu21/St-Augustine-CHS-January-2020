@@ -24,8 +24,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1156"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZmE-2m-EIZ">
-                                <rect key="frame" x="0.0" y="0.0" width="219" height="687"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmE-2m-EIZ">
+                                <rect key="frame" x="0.0" y="0.0" width="226.5" height="1156"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1t-R2-2No">
                                         <rect key="frame" x="0.0" y="0.0" width="226.5" height="198"/>
@@ -80,11 +80,11 @@
                                             <constraint firstItem="v8j-0f-I2F" firstAttribute="leading" secondItem="vrZ-mV-u1U" secondAttribute="leading" id="t1M-it-RVz"/>
                                         </constraints>
                                     </view>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io6-Yf-S5L" userLabel="Menu Scroll View">
-                                        <rect key="frame" x="0.0" y="196" width="227" height="471"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io6-Yf-S5L" userLabel="Menu Scroll View">
+                                        <rect key="frame" x="0.0" y="196" width="227" height="960"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVn-Ji-FU2" userLabel="Buttons View">
-                                                <rect key="frame" x="0.0" y="0.0" width="227" height="1102"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="227" height="1133"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjR-Ip-86O">
                                                         <rect key="frame" x="57" y="14" width="170" height="40"/>
@@ -249,7 +249,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZG-XK-9Vm" userLabel="Twitter">
-                                                        <rect key="frame" x="57" y="414" width="119" height="38"/>
+                                                        <rect key="frame" x="57" y="414" width="162" height="38"/>
                                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="20"/>
                                                         <state key="normal" title="Twitter">
                                                             <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -258,8 +258,8 @@
                                                             <action selector="didTapTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDv-5C-Hpm"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="ip6-nU-uu2">
-                                                        <rect key="frame" x="10" y="414" width="38" height="38"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="ip6-nU-uu2">
+                                                        <rect key="frame" x="11" y="414" width="37" height="38"/>
                                                         <color key="tintColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="38" id="29y-GY-gDI"/>
@@ -282,9 +282,9 @@
                                                     <constraint firstItem="1Jl-dc-Hrw" firstAttribute="top" secondItem="veQ-6W-5kP" secondAttribute="bottom" constant="18" id="Ius-X1-TGQ"/>
                                                     <constraint firstItem="ip6-nU-uu2" firstAttribute="centerX" secondItem="2YU-Wg-bQL" secondAttribute="centerX" id="JdD-TI-Cit"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="trailing" secondItem="ZMV-k5-aAe" secondAttribute="trailing" id="JjW-jE-VMx"/>
-                                                    <constraint firstAttribute="trailing" secondItem="CZG-XK-9Vm" secondAttribute="trailing" constant="51" id="KIx-pc-vUv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CZG-XK-9Vm" secondAttribute="trailing" constant="8" id="KIx-pc-vUv"/>
                                                     <constraint firstItem="CZG-XK-9Vm" firstAttribute="top" secondItem="MsF-DH-gw2" secondAttribute="bottom" constant="8" id="Klg-0c-dYS"/>
-                                                    <constraint firstAttribute="height" constant="1102" id="OIJ-Pa-UUQ"/>
+                                                    <constraint firstAttribute="height" constant="1133" id="OIJ-Pa-UUQ"/>
                                                     <constraint firstItem="CZG-XK-9Vm" firstAttribute="leading" secondItem="ip6-nU-uu2" secondAttribute="trailing" constant="9" id="Ptb-3o-jS9"/>
                                                     <constraint firstItem="KxN-jz-D1T" firstAttribute="top" secondItem="8k3-HD-byl" secondAttribute="bottom" constant="23" id="Qg2-JG-QRV"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="leading" secondItem="1Jl-dc-Hrw" secondAttribute="leading" id="Qkw-uu-xeh"/>
@@ -324,10 +324,10 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="BVn-Ji-FU2" secondAttribute="trailing" id="1ud-Ws-BSn"/>
-                                            <constraint firstAttribute="bottom" secondItem="BVn-Ji-FU2" secondAttribute="bottom" constant="-142" id="71w-Eq-fsV"/>
+                                            <constraint firstAttribute="bottom" secondItem="BVn-Ji-FU2" secondAttribute="bottom" constant="-173" id="71w-Eq-fsV"/>
                                             <constraint firstItem="BVn-Ji-FU2" firstAttribute="leading" secondItem="Io6-Yf-S5L" secondAttribute="leading" id="7Fh-cY-5fH"/>
-                                            <constraint firstAttribute="bottom" secondItem="BVn-Ji-FU2" secondAttribute="bottom" constant="-142" id="9In-D7-gSz"/>
-                                            <constraint firstItem="BVn-Ji-FU2" firstAttribute="centerY" secondItem="Io6-Yf-S5L" secondAttribute="centerY" constant="71" id="9cx-8v-NyR"/>
+                                            <constraint firstAttribute="bottom" secondItem="BVn-Ji-FU2" secondAttribute="bottom" constant="-173" id="9In-D7-gSz"/>
+                                            <constraint firstItem="BVn-Ji-FU2" firstAttribute="centerY" secondItem="Io6-Yf-S5L" secondAttribute="centerY" constant="86.5" id="9cx-8v-NyR"/>
                                             <constraint firstItem="BVn-Ji-FU2" firstAttribute="top" secondItem="Io6-Yf-S5L" secondAttribute="top" id="WUA-OE-s1n"/>
                                             <constraint firstItem="BVn-Ji-FU2" firstAttribute="leading" secondItem="Io6-Yf-S5L" secondAttribute="leading" id="XRf-h4-maC"/>
                                             <constraint firstAttribute="height" constant="960" id="cJV-oi-ND3"/>
@@ -362,8 +362,8 @@
                                     <action selector="tapOutOfMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Suw-Vn-rYj"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G0F-1K-Cg1">
-                                <rect key="frame" x="400" y="0.0" width="375" height="1156"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0F-1K-Cg1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1156"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIc-FW-6Oz">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
@@ -1013,7 +1013,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77I-ok-JlO">
-                                        <rect key="frame" x="8" y="347" width="79" height="34"/>
+                                        <rect key="frame" x="8" y="347" width="85" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="ZUp-6k-Vtx"/>
                                         </constraints>
@@ -1075,7 +1075,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DD8-XA-Vfy">
-                                        <rect key="frame" x="8" y="3" width="45" height="32"/>
+                                        <rect key="frame" x="8" y="4" width="50" height="31"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="16"/>
                                         <state key="normal" title="Cancel"/>
                                         <connections>
@@ -1148,7 +1148,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLo-TK-hrY">
-                                        <rect key="frame" x="319" y="1" width="48" height="34"/>
+                                        <rect key="frame" x="316" y="3" width="51" height="32"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <state key="normal" title="Create"/>
                                         <connections>
@@ -1156,7 +1156,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldZ-Ah-Z8D">
-                                        <rect key="frame" x="8" y="1" width="48" height="34"/>
+                                        <rect key="frame" x="8" y="3" width="53" height="32"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <state key="normal" title="Cancel"/>
                                         <connections>
@@ -1616,7 +1616,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osE-mk-C1f">
-                                        <rect key="frame" x="317" y="1" width="50" height="32"/>
+                                        <rect key="frame" x="314" y="2" width="53" height="31"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="16"/>
                                         <state key="normal" title="Update">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1627,7 +1627,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0K-R2-BNc">
-                                        <rect key="frame" x="8" y="-1" width="48" height="34"/>
+                                        <rect key="frame" x="8" y="1" width="53" height="32"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2035,7 +2035,7 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No internet Connection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Maj-0H-z1X">
-                                <rect key="frame" x="16" y="84" width="343" height="27.5"/>
+                                <rect key="frame" x="16" y="84" width="343" height="26"/>
                                 <fontDescription key="fontDescription" name="Scada-Bold" family="Scada" pointSize="22"/>
                                 <color key="textColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2498,7 +2498,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22X-Ho-EaX">
-                                        <rect key="frame" x="314" y="11" width="53" height="34"/>
+                                        <rect key="frame" x="310" y="13" width="57" height="32"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <state key="normal" title="Update"/>
                                         <connections>
@@ -2506,7 +2506,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeQ-Yu-y2p">
-                                        <rect key="frame" x="8" y="11" width="48" height="34"/>
+                                        <rect key="frame" x="8" y="13" width="53" height="32"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <state key="normal" title="Cancel"/>
                                         <connections>
@@ -2567,7 +2567,7 @@
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rbC-J1-bE7">
-                                                <rect key="frame" x="8" y="314" width="359" height="185.5"/>
+                                                <rect key="frame" x="8" y="314" width="359" height="178.5"/>
                                                 <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -2664,7 +2664,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hJ-ll-ZUe">
-                                        <rect key="frame" x="8" y="6" width="48" height="34"/>
+                                        <rect key="frame" x="8" y="8" width="53" height="32"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2674,7 +2674,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1or-9d-NL1">
-                                        <rect key="frame" x="333" y="6" width="34" height="34"/>
+                                        <rect key="frame" x="332" y="8" width="35" height="32"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <state key="normal" title="Post">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2890,7 +2890,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYb-DO-qDC">
-                                <rect key="frame" x="144" y="366" width="87" height="40"/>
+                                <rect key="frame" x="144" y="368" width="87" height="38"/>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="22"/>
                                 <state key="normal" title="Go Back">
                                     <color key="titleColor" red="0.70672154389999997" green="0.54701480290000004" blue="0.091173238470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2941,7 +2941,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Picture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG5-ke-Aqt">
-                                        <rect key="frame" x="8" y="10.5" width="359" height="21.5"/>
+                                        <rect key="frame" x="8" y="12" width="359" height="20"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -3312,7 +3312,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4x-xP-Hal">
-                                        <rect key="frame" x="8" y="10.5" width="359" height="21.5"/>
+                                        <rect key="frame" x="8" y="12" width="359" height="20"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -3645,7 +3645,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 MB" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyS-cg-YIC">
-                                <rect key="frame" x="320" y="96.5" width="39" height="38"/>
+                                <rect key="frame" x="318" y="96.5" width="41" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="pTv-AP-FPR"/>
                                 </constraints>
@@ -3931,12 +3931,12 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Arist Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyM-z1-Du7">
-                                                    <rect key="frame" x="83" y="53.5" width="272" height="21.5"/>
+                                                    <rect key="frame" x="83" y="51.5" width="272" height="20"/>
                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oEV-SK-Erq">
-                                                    <rect key="frame" x="83" y="20" width="272" height="26.5"/>
+                                                    <rect key="frame" x="83" y="20" width="272" height="24.5"/>
                                                     <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="21"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -4026,7 +4026,7 @@
                                         <rect key="frame" x="32" y="161.5" width="311" height="300"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKk-tf-ocT">
-                                                <rect key="frame" x="8" y="258" width="48" height="34"/>
+                                                <rect key="frame" x="8" y="260" width="53" height="32"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" red="0.70672154389999997" green="0.54701480290000004" blue="0.091173238470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4036,7 +4036,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAy-L9-6X1">
-                                                <rect key="frame" x="235" y="258" width="68" height="34"/>
+                                                <rect key="frame" x="231" y="260" width="72" height="32"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                 <state key="normal" title="Purchase">
                                                     <color key="titleColor" red="0.70672154389999997" green="0.54701480290000004" blue="0.091173238470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4136,7 +4136,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are no songs right now. How about requesting one?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCf-JI-l5y">
-                                <rect key="frame" x="24" y="308" width="327" height="42.5"/>
+                                <rect key="frame" x="24" y="309" width="327" height="40"/>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -4352,7 +4352,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is your personal Titan Tag. You can get it scanned by club admins at events to get badges" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pC-zz-896">
-                                <rect key="frame" x="16" y="397" width="343" height="71"/>
+                                <rect key="frame" x="16" y="397" width="343" height="66.5"/>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="19"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4382,7 +4382,7 @@
                                 </constraints>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHo-wd-l83">
-                                <rect key="frame" x="16" y="579" width="343" height="24"/>
+                                <rect key="frame" x="16" y="580.5" width="343" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="19"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4425,7 +4425,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNg-VD-YYj">
-                                        <rect key="frame" x="8" y="4" width="42" height="31"/>
+                                        <rect key="frame" x="8" y="5" width="47" height="30"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="15"/>
                                         <state key="normal" title="Cancel"/>
                                         <connections>
@@ -4433,7 +4433,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91W-SK-EUe">
-                                        <rect key="frame" x="314" y="4" width="53" height="31"/>
+                                        <rect key="frame" x="311" y="5" width="56" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="15"/>
                                         <state key="normal" title="Request"/>
@@ -4678,7 +4678,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGc-MM-mvG">
-                                        <rect key="frame" x="314" y="6" width="53" height="34"/>
+                                        <rect key="frame" x="310" y="8" width="57" height="32"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <state key="normal" title="Update"/>
                                         <connections>
@@ -4686,7 +4686,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ee-Kl-zy7">
-                                        <rect key="frame" x="8" y="6" width="48" height="34"/>
+                                        <rect key="frame" x="8" y="8" width="53" height="32"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <state key="normal" title="Cancel"/>
                                         <connections>
@@ -4758,7 +4758,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
                         <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Got any questions to add?  Visit our site at https://app.staugustinechs.ca/!" textAlignment="center" id="JYZ-ZA-zr4">
-                            <rect key="frame" x="0.0" y="140" width="375" height="65"/>
+                            <rect key="frame" x="0.0" y="140" width="375" height="55"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4816,7 +4816,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1308"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PD8-fo-a7q">
-                                                <rect key="frame" x="8" y="238" width="359" height="185.5"/>
+                                                <rect key="frame" x="8" y="238" width="359" height="178.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" red="0.3579582254" green="0.0530083888" blue="0.12030329519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
@@ -4841,7 +4841,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Announcements" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRp-LF-EjK">
-                                                <rect key="frame" x="8" y="670.5" width="359" height="35"/>
+                                                <rect key="frame" x="8" y="663.5" width="359" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="S4t-qC-Dcy"/>
                                                 </constraints>
@@ -4850,7 +4850,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0s-0E-a4J">
-                                                <rect key="frame" x="89" y="431.5" width="197" height="34"/>
+                                                <rect key="frame" x="89" y="424.5" width="197" height="32"/>
                                                 <color key="backgroundColor" red="0.84705882349999995" green="0.68627450980000004" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                                 <state key="normal" title="Join Club"/>
@@ -4859,7 +4859,7 @@
                                                 </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FAQ-Ju-EDl">
-                                                <rect key="frame" x="0.0" y="511.5" width="375" height="100"/>
+                                                <rect key="frame" x="0.0" y="504.5" width="375" height="100"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="5hg-lY-jbw"/>
@@ -4900,7 +4900,7 @@
                                                 </connections>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badges" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNJ-VN-9E9">
-                                                <rect key="frame" x="8" y="473.5" width="359" height="30"/>
+                                                <rect key="frame" x="8" y="466.5" width="359" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="af8-aT-x79"/>
                                                 </constraints>
@@ -4909,7 +4909,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geg-bm-vH6">
-                                                <rect key="frame" x="89" y="627.5" width="197" height="35"/>
+                                                <rect key="frame" x="89" y="620.5" width="197" height="35"/>
                                                 <color key="backgroundColor" red="0.84705882349999995" green="0.68627450980000004" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="RkF-nT-jBH"/>
@@ -4923,7 +4923,7 @@
                                                 </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Eq4-6n-U28">
-                                                <rect key="frame" x="0.0" y="713.5" width="375" height="576"/>
+                                                <rect key="frame" x="0.0" y="706.5" width="375" height="576"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="576" id="3dz-c9-p76"/>
@@ -5195,7 +5195,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAN-F8-eET">
-                                        <rect key="frame" x="319" y="11" width="48" height="34"/>
+                                        <rect key="frame" x="316" y="13" width="51" height="32"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <state key="normal" title="Create"/>
                                         <connections>
@@ -5203,7 +5203,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rom-FV-IMr">
-                                        <rect key="frame" x="8" y="11" width="48" height="34"/>
+                                        <rect key="frame" x="8" y="13" width="53" height="32"/>
                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
                                         <state key="normal" title="Cancel"/>
                                         <connections>
@@ -5264,7 +5264,7 @@
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" text="Club Description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oNq-YS-yyP">
-                                                <rect key="frame" x="8" y="314" width="359" height="37.5"/>
+                                                <rect key="frame" x="8" y="314" width="359" height="36.5"/>
                                                 <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>

@@ -334,7 +334,7 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
         profilePicture.image = allUserFirebaseData.profilePic
         
         //If the screen is too small to fit all menu buttons, just change the height to whatever it is
-        if UIScreen.main.bounds.height <= 1000 {
+        if UIScreen.main.bounds.height <= 667.0 {
             menuScrollView.contentSize.height = buttonsView.frame.size.height
         }
     }

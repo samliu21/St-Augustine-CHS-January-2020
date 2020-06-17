@@ -11,10 +11,7 @@ import UIKit
 
 class tasksController: UITableViewController {
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var noteLabel: UILabel!
-    @IBOutlet weak var dueDateLabel: UILabel!
-    @IBOutlet weak var doneLabel: UILabel!
+
     
 }
 

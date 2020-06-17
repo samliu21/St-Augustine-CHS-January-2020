@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C1Q-We-Oq9">
-    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -228,41 +228,24 @@
                                                             <constraint firstAttribute="height" constant="30" id="x19-vU-UJY"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsF-DH-gw2">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsF-DH-gw2" userLabel="Links">
                                                         <rect key="frame" x="57" y="363" width="170" height="43"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="43" id="kj5-92-fw1"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="20"/>
-                                                        <state key="normal" title="Prayer Request">
+                                                        <state key="normal" title="Links">
                                                             <color key="titleColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="didTapPrayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2pk-Vc-lG2"/>
+                                                            <segue destination="1jL-un-BXd" kind="show" id="jBG-SH-uO2"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="2YU-Wg-bQL">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="links" translatesAutoresizingMaskIntoConstraints="NO" id="2YU-Wg-bQL" userLabel="link">
                                                         <rect key="frame" x="17" y="371" width="25" height="27"/>
                                                         <color key="tintColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="27" id="dIu-ob-Kcq"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZG-XK-9Vm" userLabel="Twitter">
-                                                        <rect key="frame" x="57" y="414" width="162" height="38"/>
-                                                        <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="20"/>
-                                                        <state key="normal" title="Twitter">
-                                                            <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="didTapTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDv-5C-Hpm"/>
-                                                        </connections>
-                                                    </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="ip6-nU-uu2">
-                                                        <rect key="frame" x="11" y="414" width="37" height="38"/>
-                                                        <color key="tintColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="38" id="29y-GY-gDI"/>
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
@@ -280,12 +263,8 @@
                                                     <constraint firstItem="PjR-Ip-86O" firstAttribute="leading" secondItem="8k3-HD-byl" secondAttribute="trailing" constant="13" id="Dmx-C5-K5y"/>
                                                     <constraint firstItem="ZMV-k5-aAe" firstAttribute="leading" secondItem="BVn-Ji-FU2" secondAttribute="leading" constant="14" id="G9d-5K-3c6"/>
                                                     <constraint firstItem="1Jl-dc-Hrw" firstAttribute="top" secondItem="veQ-6W-5kP" secondAttribute="bottom" constant="18" id="Ius-X1-TGQ"/>
-                                                    <constraint firstItem="ip6-nU-uu2" firstAttribute="centerX" secondItem="2YU-Wg-bQL" secondAttribute="centerX" id="JdD-TI-Cit"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="trailing" secondItem="ZMV-k5-aAe" secondAttribute="trailing" id="JjW-jE-VMx"/>
-                                                    <constraint firstAttribute="trailing" secondItem="CZG-XK-9Vm" secondAttribute="trailing" constant="8" id="KIx-pc-vUv"/>
-                                                    <constraint firstItem="CZG-XK-9Vm" firstAttribute="top" secondItem="MsF-DH-gw2" secondAttribute="bottom" constant="8" id="Klg-0c-dYS"/>
                                                     <constraint firstAttribute="height" constant="1133" id="OIJ-Pa-UUQ"/>
-                                                    <constraint firstItem="CZG-XK-9Vm" firstAttribute="leading" secondItem="ip6-nU-uu2" secondAttribute="trailing" constant="9" id="Ptb-3o-jS9"/>
                                                     <constraint firstItem="KxN-jz-D1T" firstAttribute="top" secondItem="8k3-HD-byl" secondAttribute="bottom" constant="23" id="Qg2-JG-QRV"/>
                                                     <constraint firstItem="gpF-dK-eU6" firstAttribute="leading" secondItem="1Jl-dc-Hrw" secondAttribute="leading" id="Qkw-uu-xeh"/>
                                                     <constraint firstItem="2YU-Wg-bQL" firstAttribute="top" secondItem="gpF-dK-eU6" secondAttribute="bottom" constant="24" id="SLY-nw-ZFe"/>
@@ -299,9 +278,6 @@
                                                     <constraint firstItem="MsF-DH-gw2" firstAttribute="trailing" secondItem="pTW-BS-PLe" secondAttribute="trailing" id="Yc6-Vm-sI8"/>
                                                     <constraint firstItem="ZMV-k5-aAe" firstAttribute="top" secondItem="Qd4-Ox-kpx" secondAttribute="bottom" constant="20" id="Ywm-tT-V6k"/>
                                                     <constraint firstItem="pTW-BS-PLe" firstAttribute="leading" secondItem="gpF-dK-eU6" secondAttribute="trailing" constant="13" id="a53-fM-EFM"/>
-                                                    <constraint firstItem="CZG-XK-9Vm" firstAttribute="leading" secondItem="MsF-DH-gw2" secondAttribute="leading" id="bNZ-VU-5wX"/>
-                                                    <constraint firstItem="ip6-nU-uu2" firstAttribute="centerY" secondItem="CZG-XK-9Vm" secondAttribute="centerY" id="cML-pE-tmd"/>
-                                                    <constraint firstItem="ip6-nU-uu2" firstAttribute="top" secondItem="CZG-XK-9Vm" secondAttribute="top" id="dxX-RM-UKp"/>
                                                     <constraint firstItem="cAn-aQ-T8o" firstAttribute="top" secondItem="cfm-Mj-2lV" secondAttribute="bottom" constant="10" id="fYt-Pk-3nd"/>
                                                     <constraint firstItem="3G5-hW-WiM" firstAttribute="leading" secondItem="Hkj-Wx-aMJ" secondAttribute="leading" id="gme-Nh-tmy"/>
                                                     <constraint firstItem="cAn-aQ-T8o" firstAttribute="leading" secondItem="ZMV-k5-aAe" secondAttribute="trailing" constant="13" id="h1E-tv-6mk"/>
@@ -2922,6 +2898,67 @@
             </objects>
             <point key="canvasLocation" x="-799.20000000000005" y="172.26386806596702"/>
         </scene>
+        <!--Links-->
+        <scene sceneID="Ogm-Zh-7Ta">
+            <objects>
+                <viewController id="1jL-un-BXd" customClass="links" customModule="St_Augustine_CHS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jhz-LB-QUu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1A-SA-dkR">
+                                <rect key="frame" x="75" y="18" width="121" height="34"/>
+                                <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
+                                <state key="normal" title="Prayer Requests">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapPrayer:" destination="1jL-un-BXd" eventType="touchUpInside" id="qV7-jg-asQ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="2p6-BD-0n9">
+                                <rect key="frame" x="15" y="20" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HxI-A2-VKG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="ZrR-dv-yzD">
+                                <rect key="frame" x="15" y="60" width="50" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7zT-dj-ITc"/>
+                                    <constraint firstAttribute="width" constant="50" id="GLN-L1-Cim"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjD-Ei-3vg">
+                                <rect key="frame" x="75" y="65.5" width="53" height="34"/>
+                                <fontDescription key="fontDescription" name="Scada-Regular" family="Scada" pointSize="17"/>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapTwitter:" destination="1jL-un-BXd" eventType="touchUpInside" id="wQB-HN-hKm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZrR-dv-yzD" firstAttribute="top" secondItem="2p6-BD-0n9" secondAttribute="bottom" constant="10" id="0Md-bX-Gtn"/>
+                            <constraint firstItem="CjD-Ei-3vg" firstAttribute="centerY" secondItem="ZrR-dv-yzD" secondAttribute="centerY" id="69P-bB-ae7"/>
+                            <constraint firstItem="I1A-SA-dkR" firstAttribute="centerY" secondItem="2p6-BD-0n9" secondAttribute="centerY" id="GFr-DY-ANc"/>
+                            <constraint firstItem="2p6-BD-0n9" firstAttribute="leading" secondItem="O6d-it-PBR" secondAttribute="leading" constant="15" id="Hj9-OI-phz"/>
+                            <constraint firstItem="CjD-Ei-3vg" firstAttribute="leading" secondItem="I1A-SA-dkR" secondAttribute="leading" id="SrH-75-XmW"/>
+                            <constraint firstItem="2p6-BD-0n9" firstAttribute="top" secondItem="O6d-it-PBR" secondAttribute="top" constant="20" id="egH-nv-vSm"/>
+                            <constraint firstItem="I1A-SA-dkR" firstAttribute="leading" secondItem="2p6-BD-0n9" secondAttribute="trailing" constant="10" id="lpI-54-BtV"/>
+                            <constraint firstItem="ZrR-dv-yzD" firstAttribute="leading" secondItem="2p6-BD-0n9" secondAttribute="leading" id="ob5-g5-9ti"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O6d-it-PBR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Links" id="SyF-st-IGL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mez-6y-eHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165.59999999999999" y="537.48125937031489"/>
+        </scene>
         <!--SignInProfilePicVC-->
         <scene sceneID="Gm1-F7-ydn">
             <objects>
@@ -3590,36 +3627,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WPy-Lh-yAm" id="Qji-Kh-gCO">
                                     <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g3S-Gr-7vz">
-                                            <rect key="frame" x="-16" y="-0.5" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DeY-lx-vUu">
-                                            <rect key="frame" x="-16" y="-0.5" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ipf-ET-oDR">
-                                            <rect key="frame" x="-16" y="-0.5" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C1b-k4-OH9">
-                                            <rect key="frame" x="-16" y="-1" width="375" height="45"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -3628,12 +3635,6 @@
                             <outlet property="delegate" destination="Y9O-0N-oiC" id="JXq-Vk-wqb"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="doneLabel" destination="C1b-k4-OH9" id="r0r-JZ-rYc"/>
-                        <outlet property="dueDateLabel" destination="ipf-ET-oDR" id="c8K-Mu-2WH"/>
-                        <outlet property="noteLabel" destination="DeY-lx-vUu" id="i81-dk-DIf"/>
-                        <outlet property="titleLabel" destination="g3S-Gr-7vz" id="05F-l6-TvE"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGp-dw-wWN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4827,7 +4828,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
                         <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Got any questions to add?  Visit our site at https://app.staugustinechs.ca/!" textAlignment="center" id="JYZ-ZA-zr4">
-                            <rect key="frame" x="0.0" y="140" width="375" height="51"/>
+                            <rect key="frame" x="0.0" y="140" width="375" height="62"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5432,6 +5433,7 @@
         <image name="clubs" width="60" height="60"/>
         <image name="faq" width="400" height="400"/>
         <image name="gear" width="60" height="60"/>
+        <image name="links" width="224" height="224"/>
         <image name="search" width="48" height="48"/>
         <image name="song" width="48" height="48"/>
         <image name="space" width="1600" height="900"/>

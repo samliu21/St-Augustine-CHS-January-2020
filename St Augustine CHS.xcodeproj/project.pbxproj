@@ -10,6 +10,7 @@
 		3BDFAD5F656D5C773AFAE53F /* Pods_St_Augustine_CHS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A889DD5392F60F14A9A356D0 /* Pods_St_Augustine_CHS.framework */; };
 		4C1D4AB9B88DED385F67F83A /* Pods_St_Augustine_CHSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9334E3157123B318D61742 /* Pods_St_Augustine_CHSUITests.framework */; };
 		5594E2F72360DA6A0089CF98 /* FAQController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594E2F62360DA6A0089CF98 /* FAQController.swift */; };
+		5616AB09249A933C00BD3203 /* links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5616AB08249A933C00BD3203 /* links.swift */; };
 		564CCF7C24999F490006A004 /* tasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564CCF7B24999F490006A004 /* tasksController.swift */; };
 		B90669C82186851800CAA824 /* addAnncController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90669C72186851800CAA824 /* addAnncController.swift */; };
 		B90669CA2186ACF100CAA824 /* addClubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90669C92186ACF100CAA824 /* addClubController.swift */; };
@@ -96,6 +97,7 @@
 		1200440126EC5259394BE33A /* Pods-St Augustine CHS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-St Augustine CHS.release.xcconfig"; path = "Pods/Target Support Files/Pods-St Augustine CHS/Pods-St Augustine CHS.release.xcconfig"; sourceTree = "<group>"; };
 		463C32E1E30EE7C9CC43FE07 /* Pods-St Augustine CHSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-St Augustine CHSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-St Augustine CHSTests/Pods-St Augustine CHSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5594E2F62360DA6A0089CF98 /* FAQController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQController.swift; sourceTree = "<group>"; };
+		5616AB08249A933C00BD3203 /* links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = links.swift; sourceTree = "<group>"; };
 		564CCF7B24999F490006A004 /* tasksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tasksController.swift; sourceTree = "<group>"; };
 		8042757457064347219EC6AC /* Pods-St Augustine CHS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-St Augustine CHS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-St Augustine CHS/Pods-St Augustine CHS.debug.xcconfig"; sourceTree = "<group>"; };
 		81D256879F747A216782CBDD /* Pods-St Augustine CHSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-St Augustine CHSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-St Augustine CHSUITests/Pods-St Augustine CHSUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				B94B173E21A0AC5C00BCD86A /* SignInPrefController.swift */,
 				B93F208F21738E5100279829 /* menuController.swift */,
 				B958A26321C4023A00726345 /* cafeMenuController.swift */,
+				5616AB08249A933C00BD3203 /* links.swift */,
 				B9876BAD217AC9E800D57C16 /* clubListController.swift */,
 				B90669C92186ACF100CAA824 /* addClubController.swift */,
 				B995CFF3218F8600004970E0 /* editClubDetailsController.swift */,
@@ -628,6 +631,7 @@
 				B9ACA1EC21755BBD00302C4B /* settingsController.swift in Sources */,
 				B94B173B21A0AAD000BCD86A /* SignInProfilePicController.swift in Sources */,
 				B90669CA2186ACF100CAA824 /* addClubController.swift in Sources */,
+				5616AB09249A933C00BD3203 /* links.swift in Sources */,
 				B94B173F21A0AC5C00BCD86A /* SignInPrefController.swift in Sources */,
 				B9FECBFD2190C79D0006CCE3 /* allExtensions.swift in Sources */,
 				B9876BAE217AC9E800D57C16 /* clubListController.swift in Sources */,

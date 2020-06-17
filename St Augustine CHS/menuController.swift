@@ -1106,11 +1106,4 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
         return dailyPrayer
     }
     
-    @IBAction func didTapPrayer(_ sender: Any) {
-        UIApplication.shared.open(NSURL(string: "https://forms.gle/gVqcL4UPv3uX7hVz6")! as URL)
-    }
-    
-    @IBAction func didTapTwitter(_ sender: UIButton) {
-        UIApplication.shared.open(NSURL(string:"https://twitter.com/STAUpdates")! as URL)
-    }
 }

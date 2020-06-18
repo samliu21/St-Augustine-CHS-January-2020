@@ -10,6 +10,20 @@ import UIKit
 
 class links: UIViewController {
 
+    @IBOutlet weak var background1: UILabel!
+    @IBOutlet weak var prayerRequestButton: UIButton!
+    @IBOutlet weak var background2: UILabel!
+    @IBOutlet weak var twitterButton: UIButton!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.background1.layer.cornerRadius = 20
+        self.prayerRequestButton.layer.cornerRadius = 20
+        self.background2.layer.cornerRadius = 20
+        self.twitterButton.layer.cornerRadius = 20
+    }
+    
     @IBAction func didTapPrayer(_ sender: Any) {
         UIApplication.shared.open(NSURL(string: "https://forms.gle/gVqcL4UPv3uX7hVz6")! as URL)
     }

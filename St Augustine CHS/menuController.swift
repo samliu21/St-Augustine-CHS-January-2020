@@ -940,23 +940,25 @@ class menuController: UIViewController, UICollectionViewDataSource, UICollection
                 }
                 
                 //Only display the day number if the day is 1 or 2
-                if (theDayNumber == "1" || theDayNumber == "2") {
+                // change value from "A" and "B" to "1" and "2" when the school switches back to day 1 and 2 instead of cohort a and b
+                // also a and b must be capitals
+                if (theDayNumber == "A" || theDayNumber == "B") {
                     self.dayNumberHeight.constant = 25
                     self.dayNumber.isHidden = false
                     
                     let theDay = DateFormatter.localizedString(from: self.theDate, dateStyle: DateFormatter.Style.full, timeStyle: DateFormatter.Style.none)
                     //If its a weekend set up the "monday will be message"
                     if (theDay.range(of:"Sunday") != nil) || (theDay.range(of:"Saturday") != nil){
-                        if theDayNumber == "1" {
-                            self.dayNumber.text = "Monday will be a Day 2"
-                        } else if theDayNumber == "2" {
-                            self.dayNumber.text = "Monday will be a Day 1"
+                        if theDayNumber == "A" {
+                            self.dayNumber.text = "Monday will be Cohort B"
+                        } else if theDayNumber == "B" {
+                            self.dayNumber.text = "Monday will be Cohort A"
                         }
                     }
                     
                     //Otherwise just display the normal day number
                     else {
-                        self.dayNumber.text = "Day \(theDayNumber)"
+                        self.dayNumber.text = "Cohort \(theDayNumber)"
                     }
                 } else {
                     if haveFun {

@@ -1,4 +1,4 @@
-## Setting up the Website Notes:
+## Setting up the Functions Notes:
 Do not upload the node_modules file in commits for efficiency
 
 All you need to do is run "npm i" locally in the terminal (be sure you are in the /functions folder), and it will install all the proper node modules locally.

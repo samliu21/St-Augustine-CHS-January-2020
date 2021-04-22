@@ -95,7 +95,7 @@ exports.sendEmailToAdmins = functions.https.onCall((data, response) => {
                 //     service: 'gmail',
                 //     auth: {
                 //         user: 'sachsappteam@gmail.com',
-                //         pass: 'takecompsciyoun00bs'
+                //         pass: 'CHECK THE DOCS FOR THE PASSWORD.... NEVER PUT IT HERE IN GIT LOL'
                 //     }
                 // });
                 

@@ -1,7 +1,7 @@
 const https = require('follow-redirects').http;
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
-const FeildValue = require('firebase-admin').firestore.FieldValue;
+const FieldValue = require('firebase-admin').firestore.FieldValue;
 // const nodemailer = require('nodemailer');
 // const cors = require('cors')();
 
@@ -84,7 +84,7 @@ exports.sendEmailToAdmins = functions.https.onCall((data, response) => {
                 admin.messaging().send(message)
                 .then((response2) => {
                     console.log('Successfully sent message:', response2);
-                    return 'sucess';
+                    return 'success';
                 })
                 .catch((error) => {
                     console.log('Error sending message:', error);
@@ -274,7 +274,7 @@ exports.getDayNumber = functions.https.onRequest((request, response) => {
     }, (resp) => {
     let data = '';
 
-    // A chunk of data has been recieved.
+    // A chunk of data has been received.
     resp.on('data', (chunk) => {
         data += chunk;
     });
@@ -304,7 +304,7 @@ exports.getDayNumber = functions.https.onRequest((request, response) => {
         .catch(error => {
             //handle the error
             console.log(error);
-            response.status(error.status >= 100 && error.status < 600 ? error.code : 500).send("Error accessing firestore: " + error.message);
+            response.status(500).send("Error accessing firestore: " + error.message);
         });
     });
     }).on("error", (err) => {
@@ -396,12 +396,20 @@ exports.manageSubscriptions = functions.https.onCall((data, context) => {
 });
 
 exports.checkSnowDay = functions.https.onRequest((request, response) => {
+    // THIS WEBSITE HAS BEEN CHANGED TO: bp.schoolbuscity.com
+    // I dont know how the website should look like if it is a snow day. 
+    // I recommend when it is a snow day, you save the page as an HTML file so you have a copy of it
+    // Then just edit the regex check:
+    //    - Currently, I am checking: 
+    //    - data.includes("all school buses, vans and taxis") && data.includes("are cancelled for today")
+    //  But this may have changed!
+
     https.get({
-        host: 'net.schoolbuscity.com',
+        host: 'net.schoolbuscity.com',  // <--- this website wont work
     }, (resp) => {
     let data = '';
     
-    // A chunk of data has been recieved.
+    // A chunk of data has been received.
     resp.on('data', (chunk) => {
         data += chunk;
     });
@@ -415,7 +423,6 @@ exports.checkSnowDay = functions.https.onRequest((request, response) => {
             .then(snapshot => {
                 var isSnowDay = snapshot.data().snowDay
                 if (!isSnowDay) {
-                    console.log('not a snow day yet');
                     if (data.includes("all school buses, vans and taxis") && data.includes("are cancelled for today")) {
                         console.log('snow day');
             
@@ -441,46 +448,55 @@ exports.checkSnowDay = functions.https.onRequest((request, response) => {
                             response.send(error);
                             return 'error sending';
                         });
+
+                        // We don't need the below commented out code. We have the snapshot already
+                        // that was my bad. Idk why i called the database again
+                        response.send('snow day');
+                        return snapshot.ref.set({
+                            snowDay: true
+                        }, {merge: true});
             
-                        // eslint-disable-next-line promise/no-nesting
-                        admin.firestore().doc('info/dayNumber').get()
-                        .then(snapshot => {
-                            if (snapshot.exists) {
-                                return snapshot.ref.set({
-                                    snowDay: true
-                                }, {merge: true});
-                            } else {
-                                console.log('no log snow day')
-                                throw new Error('no write snow day')
-                            }
-                        })
-                        .catch(error => {
-                            //handle the error
-                            console.log(error);
-                            //response.status(error.status >= 100 && error.status < 600 ? error.code : 500).send("Error accessing firestore: " + error.message);
-                        });
-            
-                        return 'done';
+                        // // eslint-disable-next-line promise/no-nesting
+                        // admin.firestore().doc('info/dayNumber').get()
+                        // .then(snapshot => {
+                        //     if (snapshot.exists) {
+                        //         return snapshot.ref.set({
+                        //             snowDay: true
+                        //         }, {merge: true});
+                        //     } else {
+                        //         console.log('no log snow day')
+                        //         throw new Error('no write snow day')
+                        //     }
+                        // })
+                        // .catch(error => {
+                        //     //handle the error
+                        //     console.log(error);
+                        //     //response.status(500).send("Error accessing firestore: " + error.message);
+                        // });
                     } else {
-                        console.log('not snow day');
-                        // eslint-disable-next-line promise/no-nesting
-                        admin.firestore().doc('info/dayNumber').get()
-                        .then(snapshot => {
-                            response.send('not a snow day')
-                            if (snapshot.exists) {
-                                return snapshot.ref.set({
-                                    snowDay: false
-                                }, {merge: true});
-                            } else {
-                                console.log('no write snow day')
-                                throw new Error('no write snow day')
-                            }
-                        })
-                        .catch(error => {
-                            //handle the error
-                            console.log(error);
-                            response.status(error.status >= 100 && error.status < 600 ? error.code : 500).send("Error accessing firestore: " + error.message);
-                        });
+                        response.send('not snow day');
+                        return snapshot.ref.set({
+                            snowDay: false
+                        }, {merge: true});
+
+                        // // eslint-disable-next-line promise/no-nesting
+                        // admin.firestore().doc('info/dayNumber').get()
+                        // .then(snapshot => {
+                        //     response.send('not a snow day')
+                        //     if (snapshot.exists) {
+                        //         return snapshot.ref.set({
+                        //             snowDay: false
+                        //         }, {merge: true});
+                        //     } else {
+                        //         console.log('no write snow day')
+                        //         throw new Error('no write snow day')
+                        //     }
+                        // })
+                        // .catch(error => {
+                        //     //handle the error
+                        //     console.log(error);
+                        //     response.status(500).send("Error accessing firestore: " + error.message);
+                        // });
                     }
                 } else {
                     console.log('first check');
@@ -491,7 +507,7 @@ exports.checkSnowDay = functions.https.onRequest((request, response) => {
             .catch(error => {
                 //handle the error
                 console.log(error);
-                response.status(error.status >= 100 && error.status < 600 ? error.code : 500).send("Error accessing firestore: " + error.message);
+                response.status(500).send("Error accessing firestore: " + error.message);
             });
         return 'none';
     });
@@ -533,7 +549,7 @@ exports.sendToUser = functions.https.onCall((data, response) => {
     admin.messaging().send(message)
     .then((response2) => {
         console.log('Successfully sent message:', response2);
-        return 'sucess';
+        return 'success';
     })
     .catch((error) => {
         console.log('Error sending message:', error);
@@ -566,7 +582,7 @@ exports.testTopic = functions.https.onRequest((request, response) => {
     .then((response2) => {
         response.send('nice');
         console.log('Successfully sent message:', response2);
-        return 'sucess';
+        return 'success';
     })
     .catch((error) => {
         response.send(error);
@@ -593,7 +609,7 @@ exports.deleteSeniors = functions.https.onRequest((req, res) => {
 
             console.log(usr_email);
             try {
-                if(usr_email.includes("19")){
+                if(usr_email.includes("19")){    // NEEDS TO UPDATE. Delete seniors who graduate 2020, eventually 2021
                     senior_ids.push(doc.id);
                 }
             } catch (err) {
@@ -703,7 +719,7 @@ exports.fixJohnsMistake = functions.https.onRequest((req, res) => {
 
             let delete_stuff = admin.firestore().collection('users').doc(doc.id).update( {
 
-                "courses" : FeildValue.delete() 
+                "courses" : FieldValue.delete() 
 
             })
 
@@ -734,7 +750,7 @@ exports.removeClubsFromUsers = functions.https.onRequest((req, res) => {
             for(let i = 0; i < usr_data.clubs.length; i++){
                 console.log(doc.id);
                 admin.firestore().collection('users').doc(doc.id).update({
-                    "clubs" : FeildValue.arrayRemove(usr_data.clubs[i])
+                    "clubs" : FieldValue.arrayRemove(usr_data.clubs[i])
                     // "clubs" : []
                 });
             }

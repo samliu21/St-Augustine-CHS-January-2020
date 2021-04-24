@@ -276,9 +276,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
-  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  Crashlytics: a33af323773f73904037dc2e684cd2f0d29f4fe2
   CropViewController: a090820b15fc3da68e694d7c192a4708c576828b
-  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  Fabric: 09ef2d9b99b104702bede1acaf469fb8f20a9146
   Firebase: 59d557e064217fab6a03ff00baa73c06e73832e6
   FirebaseABTesting: 1f50b8d50f5e3469eea54e7463a7b7fe221d1f5e
   FirebaseAnalytics: 75e4bbc6417d190cc98ec1f17c41a4fad4c2c976
@@ -295,7 +295,7 @@ SPEC CHECKSUMS:
   FirebaseMessaging: 08289db05bdc71d91fe70916de95bb0c3c86ca9b
   FirebaseMLCommon: d8a789e36a7faa175b1a5d1139e7fc7323c8db7b
   FirebaseMLVision: 07c0da3ceaa5ecde621528a985748d6098a84388
-  FirebaseMLVisionBarcodeModel: 7ae6e777c4c268505f08761afdfb64613c41204d
+  FirebaseMLVisionBarcodeModel: dc59ed118d2292f70b6a491bd597d6be2b5a3626
   FirebaseRemoteConfig: 7e11c65f0769c09bff6947997c209515058c5318
   FirebaseStorage: 29075f874c2b3cf61e5221a62c4ceefc809e5412
   Floaty: 1a4e213f3512cf3045ef9cb0c1ff456226d1f66a
@@ -315,4 +315,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3fec6f550f0d4a465e3784bb025a71e54781daa4
 
-COCOAPODS: 1.9.0.beta.2
+COCOAPODS: 1.10.0
